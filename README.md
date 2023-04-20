@@ -71,8 +71,14 @@ CONV 電路輸入為一灰階圖像，電路需完成3層(Layer)的運算流程�
 
 ##### &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(i) CONV_TMR
 
-![](https://i.imgur.com/skEhTgp.png)
+![](https://i.imgur.com/RpCSBJn.png)
 
+
+<br>
+
+##### &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(2) Multiplier20
+
+![](https://i.imgur.com/XFHJzDB.png)
 
 <br>
 

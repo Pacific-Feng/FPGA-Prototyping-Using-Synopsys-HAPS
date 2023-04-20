@@ -1,0 +1,85 @@
+
+Warning-[UNKWN_IGOPTS] Unknown option(s) ignored
+  Unknown option(s) '-top ' passed to 'vlogan' command line is(are) ignored.
+  Please make sure that there are no typos in the option(s) passed, or the 
+  options are only applicable to VCS at elaboration step. Also check 'vlogan 
+  -help' for supported options. 
+
+                         Chronologic VCS (TM)
+Version Q-2020.03-SP2-10-T-20220405_Full64 -- Thu Apr 20 12:39:03 2023
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Note-[ZEBUUC_INCR_PASS] ZEBU UC Incr-recompile check passes
+  The design and all other inputs have not changed, so recompile is not 
+  necessary.
+  To force recompile the design, please use switch -noIncrComp .
+
+CPU time: .179 seconds to compile
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_pp' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+dmptf -debug_region+cell+encrypt' instead.
+
+Doing common elaboration 
+
+Warning-[DEBUG_DEP] Option will be deprecated
+  The option '-debug_pp' will be deprecated in a future release.  Please use 
+  '-debug_acc+pp+dmptf -debug_region+cell+encrypt' instead.
+
+                         Chronologic VCS (TM)
+Version Q-2020.03-SP2-10-T-20220405_Full64 -- Thu Apr 20 12:39:05 2023
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+UNIZFE: Got HW top: top
+Top Level Modules:
+       top
+TimeScale is 1 ns / 10 ps
+Info: Invoking Simon...
+[UFE_FLOW]: RhinoDB Rtl Population based on design traversal started
+[UFE_FLOW]: Trying to load NameDB library without path: libNameDB.so
+Info: Simon VCS Start
+                                SIMON
+Version Q-2020.03-SP2-10-T-20220405_Full64 -- Thu Apr 20 12:39:06 2023
+               Copyright (c) 1991-2020 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+
+Note-[SM_NATIVE_FORCE_ON] Native force is ON
+  Simon native force/release handling is ON
+
+
+Warning-[SM_SRI] Simon Run Ignored
+  As there is no change in design Simon Run is ignored in increment compile 
+  mode. To run it afresh use noIncrementCompile option
+
+=======================================================
+VCS pre-synth CPU Time        : 0.46 sec
+VCS pre-synth Wall-Clock Time : 1.00 sec
+VCS pre-synth Current Memory  : 367 MB
+SIMON Master CPU Time         : 0.03 sec
+SIMON Total  CPU Time         : 0.03 sec
+SIMON Master Wall-Clock Time  : 0.04 sec
+SIMON Master Current Memory   : 378 MB
+SIMON Master Peak Memory      : 378 MB
+SIMON CGroup Memory           : 452 MB
+SIMON Distribution            : 0.00,0.00,0.00,0.00 sec
+=======================================================
+Info: Simon VCS Finished
+Info: Simon call complete 
+Info: Exiting after Simon Analysis 
+CPU time: .583 seconds to compile

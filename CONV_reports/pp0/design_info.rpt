@@ -1,0 +1,21 @@
+@S |Design Info Report
+Found 3 RAM/ROM instances in the design
+Name                                                Type     Size(width*depth)     No of RD ports     No of WR ports
+--------------------------------------------------------------------------------------------------------------------
+kernel0[16:0] (in view: work.Layer0(verilog))       rom      17 * 2^4              1                  1             
+kernel1[15:0] (in view: work.Layer0(verilog))       rom      16 * 2^4              1                  1             
+correction[7:0] (in view: work.Layer0(verilog))     rom      8 * 2^4               1                  1             
+====================================================================================================================
+
+Found 1 Big Multiplier(width >= 10) instances in the design
+Name                                              Size(width1*width2)
+---------------------------------------------------------------------
+M[39:0] (in view: work.Multiplier20(verilog))     20 * 20            
+=====================================================================
+
+Found 0 Black Box instances in the design
+Found 0 hierarchies with high no of latches (>10) in the design
+
+
+####### End of Design Info Report #########
+

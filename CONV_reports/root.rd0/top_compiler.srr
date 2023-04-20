@@ -1,0 +1,148 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|root.rd0
+Synopsys HDL Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|root.rd0
+Synopsys Verilog Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+@N|Running compiler in Diagnostic mode
+@N|Running compiler in Fast Synthesis mode
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library work)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library work)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library __hyper__lib__)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_him_async_fifo_2048x258_xcvu440_stub.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80_xcvu440_mgb1_stub.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80d_xcvu440_mgb1_stub.v" (library snps_haps)
+@N: CG1222 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80_xcvu440_mgb1_stub.v":17:7:17:43|Previous declaration of module umr3_pcie_gen2_x4_haps80_xcvu440_mgb1 found
+@W: CG275 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/netlist/umr3_pcie_gen2_x4_haps80d_xcvu440_mgb1_stub.v":17:7:17:43|Duplicate module name umr3_pcie_gen2_x4_haps80_xcvu440_mgb1 (using last description encountered)!
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v" (library snps_haps)
+@N: CG334 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":925:15:925:27|Read directive translate_off.
+@N: CG333 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":930:15:930:26|Read directive translate_on.
+@W: CS138 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":16493:3:16327:8|Macro definition for UMR3___GUARD__DW_AXI_GM_ALL_INCLUDES__VH__ not found. Cannot undefine.
+@W: CS138 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":21144:3:20944:8|Macro definition for UMR3___GUARD__DW_AXI_GS_ALL_INCLUDES__VH__ not found. Cannot undefine.
+@W: CG966 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":25410:5:25410:5|Newline found within a string in a comment - should preferably be preceded with a '\'
+@W: CG966 :"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/umrbus3/umrbus3.v":25410:5:25410:5|Newline found within a string in a comment - should preferably be preceded with a '\'
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/clocks/gsv_trigger_hypermods.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_objects.v" (library snps_haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/scemi_pipes.svh" (library snps_haps)
+@I::"/home/course/csr530604/final_project/src/top.v" (library work)
+@I::"/home/course/csr530604/final_project/src/Voter20.v" (library work)
+@W: CG1337 :"/home/course/csr530604/final_project/src/Voter20.v":24:7:24:8|Net E0 is not declared.
+@W: CG1337 :"/home/course/csr530604/final_project/src/Voter20.v":25:7:25:8|Net E1 is not declared.
+@W: CG1337 :"/home/course/csr530604/final_project/src/Voter20.v":26:7:26:8|Net E2 is not declared.
+@I::"/home/course/csr530604/final_project/src/Multiplier20.v" (library work)
+@I::"/home/course/csr530604/final_project/src/MCC.v" (library work)
+@I::"/home/course/csr530604/final_project/src/Layer2.v" (library work)
+@W: CG1337 :"/home/course/csr530604/final_project/src/Layer2.v":52:7:52:18|Net caddr_wr2_en is not declared.
+@I::"/home/course/csr530604/final_project/src/Layer1.v" (library work)
+@I::"/home/course/csr530604/final_project/src/Layer0.v" (library work)
+@W: CG1337 :"/home/course/csr530604/final_project/src/Layer0.v":47:7:47:19|Net _ZCR_complete is not declared.
+@W: CG1337 :"/home/course/csr530604/final_project/src/Layer0.v":83:7:83:14|Net iaddr_en is not declared.
+@W: CG1337 :"/home/course/csr530604/final_project/src/Layer0.v":84:7:84:14|Net coord_en is not declared.
+@W: CG1337 :"/home/course/csr530604/final_project/src/Layer0.v":87:7:87:16|Net accumulate is not declared.
+@W: CG1337 :"/home/course/csr530604/final_project/src/Layer0.v":179:7:179:15|Net idata_sel is not declared.
+@I::"/home/course/csr530604/final_project/src/CONV_TMR.v" (library work)
+@N|stack limit increased to max
+Verilog syntax check successful!
+Selecting top level module top
+@N: CG364 :"/home/course/csr530604/final_project/src/Multiplier20.v":11:7:11:18|Synthesizing module Multiplier20 in library work.
+Running optimization stage 1 on Multiplier20 .......
+Finished optimization stage 1 on Multiplier20 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 208MB)
+@N: CG364 :"/home/course/csr530604/final_project/src/CONV_TMR.v":12:7:12:14|Synthesizing module CONV_TMR in library work.
+Running optimization stage 1 on CONV_TMR .......
+Finished optimization stage 1 on CONV_TMR (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 208MB)
+@N: CG364 :"/home/course/csr530604/final_project/src/Voter20.v":11:7:11:13|Synthesizing module Voter20 in library work.
+@W: CG360 :"/home/course/csr530604/final_project/src/Voter20.v":21:12:21:13|Removing wire V0, as there is no assignment to it.
+@W: CG360 :"/home/course/csr530604/final_project/src/Voter20.v":21:16:21:17|Removing wire V1, as there is no assignment to it.
+@W: CG360 :"/home/course/csr530604/final_project/src/Voter20.v":21:20:21:21|Removing wire V2, as there is no assignment to it.
+Running optimization stage 1 on Voter20 .......
+Finished optimization stage 1 on Voter20 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 208MB)
+@N: CG364 :"/home/course/csr530604/final_project/src/Layer0.v":14:7:14:12|Synthesizing module Layer0 in library work.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer0.v":142:13:142:19|Removing redundant assignment.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer0.v":143:13:143:19|Removing redundant assignment.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer0.v":175:15:175:23|Removing redundant assignment.
+@W: CG133 :"/home/course/csr530604/final_project/src/Layer0.v":44:11:44:21|Object convolution is declared but not assigned. Either assign a value or remove the declaration.
+Running optimization stage 1 on Layer0 .......
+@N: CL159 :"/home/course/csr530604/final_project/src/Layer0.v":22:25:22:28|Input busy is unused.
+Finished optimization stage 1 on Layer0 (CPU Time 0h:00m:00s, Memory Used current: 208MB peak: 208MB)
+@N: CG364 :"/home/course/csr530604/final_project/src/MCC.v":11:7:11:9|Synthesizing module MCC in library work.
+@N: CG179 :"/home/course/csr530604/final_project/src/MCC.v":77:16:77:19|Removing redundant assignment.
+Running optimization stage 1 on MCC .......
+Finished optimization stage 1 on MCC (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 209MB)
+@N: CG364 :"/home/course/csr530604/final_project/src/Layer1.v":3:7:3:12|Synthesizing module Layer1 in library work.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer1.v":37:13:37:19|Removing redundant assignment.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer1.v":63:13:63:19|Removing redundant assignment.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer1.v":71:14:71:21|Removing redundant assignment.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer1.v":133:49:133:56|Removing redundant assignment.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer1.v":162:14:162:21|Removing redundant assignment.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer1.v":170:15:170:23|Removing redundant assignment.
+Running optimization stage 1 on Layer1 .......
+Finished optimization stage 1 on Layer1 (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 209MB)
+@N: CG364 :"/home/course/csr530604/final_project/src/Layer2.v":10:7:10:12|Synthesizing module Layer2 in library work.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer2.v":73:21:73:29|Removing redundant assignment.
+@N: CG179 :"/home/course/csr530604/final_project/src/Layer2.v":85:21:85:29|Removing redundant assignment.
+Running optimization stage 1 on Layer2 .......
+Finished optimization stage 1 on Layer2 (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 209MB)
+@N: CG364 :"/home/course/csr530604/final_project/src/top.v":7:8:7:10|Synthesizing module top in library work.
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 209MB peak: 209MB)
+
+At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 209MB peak: 209MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:01 2023
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/rtl_diagnostics/root.rd0/synwork/top_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 56MB peak: 56MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:01 2023
+
+###########################################################]

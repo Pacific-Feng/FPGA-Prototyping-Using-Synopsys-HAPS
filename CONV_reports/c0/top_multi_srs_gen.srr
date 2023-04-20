@@ -1,0 +1,31 @@
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|c0
+Synopsys Synopsys Netlist Linker, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+File /home/course/csr530604/final_project/CONV/compile/c0/synwork/top_comp.srs changed - recompiling
+
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 144MB peak: 144MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:15 2023
+
+###########################################################]

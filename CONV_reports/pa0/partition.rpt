@@ -1,0 +1,1152 @@
+#
+#Copyright (C) 1994-2021 Synopsys, Inc.
+#This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+#and may only be used pursuant to the terms and conditions of a written license agreement
+#with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+#Synopsys software or the associated documentation is strictly prohibited.
+#Tool: HAPS (R) ProtoCompiler 100
+#Build: R-2020.12-SP1-1
+#Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+#OS: CentOS release 6.10 (Final)
+#Hostname: ws25
+
+#Database state : /home/course/csr530604/final_project/CONV/|pa0
+#Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+
+@S1 AP337 |Connection Model
+connection_model DIRECT -modules { \
+}
+connection_model HSTDM_ERD -modules { \
+   HSTDM_ERD_7 7
+   HSTDM_ERD_15 15
+   HSTDM_ERD_22 22
+   HSTDM_ERD_30 30
+   HSTDM_ERD_37 37
+   HSTDM_ERD_45 45
+   HSTDM_ERD_52 52
+   HSTDM_ERD_60 60
+   HSTDM_ERD_67 67
+   HSTDM_ERD_75 75
+   HSTDM_ERD_82 82
+   HSTDM_ERD_90 90
+   HSTDM_ERD_97 97
+   HSTDM_ERD_105 105
+   HSTDM_ERD_112 112
+   HSTDM_ERD_120 120
+   HSTDM_ERD_150 150
+   HSTDM_ERD_180 180
+   HSTDM_ERD_210 210
+   HSTDM_ERD_240 240
+}
+connection_model ACPM -modules { \
+   ACPM_2 2
+   ACPM_3 3
+   ACPM_4 4
+   ACPM_5 5
+   ACPM_6 6
+   ACPM_7 7
+   ACPM_8 8
+   ACPM_9 9
+   ACPM_10 10
+   ACPM_11 11
+   ACPM_12 12
+   ACPM_13 13
+   ACPM_14 14
+   ACPM_15 15
+   ACPM_16 16
+   ACPM_17 17
+   ACPM_18 18
+   ACPM_19 19
+   ACPM_20 20
+   ACPM_24 24
+   ACPM_28 28
+   ACPM_32 32
+}
+connection_model HSTDM -modules { \
+   HSTDM_8 8
+   HSTDM_16 16
+   HSTDM_24 24
+   HSTDM_32 32
+   HSTDM_40 40
+   HSTDM_48 48
+   HSTDM_56 56
+   HSTDM_64 64
+   HSTDM_72 72
+   HSTDM_80 80
+   HSTDM_88 88
+   HSTDM_96 96
+   HSTDM_104 104
+   HSTDM_112 112
+   HSTDM_120 120
+   HSTDM_128 128
+   HSTDM_160 160
+   HSTDM_192 192
+   HSTDM_224 224
+   HSTDM_256 256
+}
+connection_model HSTDMSE -modules { \
+   HSTDM_8 8
+   HSTDM_16 16
+   HSTDM_24 24
+   HSTDM_32 32
+   HSTDM_40 40
+   HSTDM_48 48
+   HSTDM_56 56
+   HSTDM_64 64
+   HSTDM_72 72
+   HSTDM_80 80
+   HSTDM_88 88
+   HSTDM_96 96
+   HSTDM_104 104
+   HSTDM_112 112
+   HSTDM_120 120
+   HSTDM_128 128
+   HSTDM_160 160
+   HSTDM_192 192
+   HSTDM_224 224
+   HSTDM_256 256
+}
+connection_model HSTDMSE_ERD -modules { \
+   HSTDM_ERD_7 7
+   HSTDM_ERD_15 15
+   HSTDM_ERD_22 22
+   HSTDM_ERD_30 30
+   HSTDM_ERD_37 37
+   HSTDM_ERD_45 45
+   HSTDM_ERD_52 52
+   HSTDM_ERD_60 60
+   HSTDM_ERD_67 67
+   HSTDM_ERD_75 75
+   HSTDM_ERD_82 82
+   HSTDM_ERD_90 90
+   HSTDM_ERD_97 97
+   HSTDM_ERD_105 105
+   HSTDM_ERD_112 112
+   HSTDM_ERD_120 120
+   HSTDM_ERD_150 150
+   HSTDM_ERD_180 180
+   HSTDM_ERD_210 210
+   HSTDM_ERD_240 240
+}
+connection_model MGTDM_Y -modules { \
+   HSTDM_MGT_64 64
+   HSTDM_MGT_128 128
+   HSTDM_MGT_256 256
+   HSTDM_MGT_512 512
+   HSTDM_MGT_1024 1024
+}
+connection_model MGTDM -modules { \
+   HSTDM_ERD_MGT_256 256
+   HSTDM_ERD_MGT_512 512
+   HSTDM_ERD_MGT_1024 1024
+}
+
+@S2 AP336 |Implied Constraints
+
+@S3 AP339 |Dissolve
+must_dissolve {M0}
+#  Local: LUT 55 DFF 4 
+#  Total: LUT 55 DFF 4 
+#  View Name: MCC
+#  Estimate: LUT 55 DFF 4 
+
+@S4 AP341 |Assignments
+
+@S4.1 AP342 |Port Assignments
+assign_port {busy} -trace {FB1_B5_A[2]}
+assign_port {caddr_rd[0]} -trace {FB1_B6_D[2]}
+assign_port {caddr_rd[10]} -trace {FB1_B7_A[2]}
+assign_port {caddr_rd[11]} -trace {FB1_B7_A[3]}
+assign_port {caddr_rd[1]} -trace {FB1_B6_D[3]}
+assign_port {caddr_rd[2]} -trace {FB1_B6_D[4]}
+assign_port {caddr_rd[3]} -trace {FB1_B6_D[5]}
+assign_port {caddr_rd[4]} -trace {FB1_B6_D[6]}
+assign_port {caddr_rd[5]} -trace {FB1_B6_D[7]}
+assign_port {caddr_rd[6]} -trace {FB1_B6_D[8]}
+assign_port {caddr_rd[7]} -trace {FB1_B6_D[9]}
+assign_port {caddr_rd[8]} -trace {FB1_B6_D[10]}
+assign_port {caddr_rd[9]} -trace {FB1_B6_D[11]}
+assign_port {caddr_wr[0]} -trace {FB1_B5_D[9]}
+assign_port {caddr_wr[10]} -trace {FB1_B6_A[9]}
+assign_port {caddr_wr[11]} -trace {FB1_B6_A[10]}
+assign_port {caddr_wr[1]} -trace {FB1_B5_D[10]}
+assign_port {caddr_wr[2]} -trace {FB1_B5_D[11]}
+assign_port {caddr_wr[3]} -trace {FB1_B6_A[2]}
+assign_port {caddr_wr[4]} -trace {FB1_B6_A[3]}
+assign_port {caddr_wr[5]} -trace {FB1_B6_A[4]}
+assign_port {caddr_wr[6]} -trace {FB1_B6_A[5]}
+assign_port {caddr_wr[7]} -trace {FB1_B6_A[6]}
+assign_port {caddr_wr[8]} -trace {FB1_B6_A[7]}
+assign_port {caddr_wr[9]} -trace {FB1_B6_A[8]}
+assign_port {cdata_rd[0]} -trace {FB1_B7_A[4]}
+assign_port {cdata_rd[10]} -trace {FB1_B7_B[4]}
+assign_port {cdata_rd[11]} -trace {FB1_B7_B[5]}
+assign_port {cdata_rd[12]} -trace {FB1_B7_B[6]}
+assign_port {cdata_rd[13]} -trace {FB1_B7_B[7]}
+assign_port {cdata_rd[14]} -trace {FB1_B7_B[8]}
+assign_port {cdata_rd[15]} -trace {FB1_B7_B[9]}
+assign_port {cdata_rd[16]} -trace {FB1_B7_B[10]}
+assign_port {cdata_rd[17]} -trace {FB1_B7_B[11]}
+assign_port {cdata_rd[18]} -trace {FB1_B7_C[2]}
+assign_port {cdata_rd[19]} -trace {FB1_B7_C[3]}
+assign_port {cdata_rd[1]} -trace {FB1_B7_A[5]}
+assign_port {cdata_rd[2]} -trace {FB1_B7_A[6]}
+assign_port {cdata_rd[3]} -trace {FB1_B7_A[7]}
+assign_port {cdata_rd[4]} -trace {FB1_B7_A[8]}
+assign_port {cdata_rd[5]} -trace {FB1_B7_A[9]}
+assign_port {cdata_rd[6]} -trace {FB1_B7_A[10]}
+assign_port {cdata_rd[7]} -trace {FB1_B7_A[11]}
+assign_port {cdata_rd[8]} -trace {FB1_B7_B[2]}
+assign_port {cdata_rd[9]} -trace {FB1_B7_B[3]}
+assign_port {cdata_wr[0]} -trace {FB1_B6_A[11]}
+assign_port {cdata_wr[10]} -trace {FB1_B6_B[11]}
+assign_port {cdata_wr[11]} -trace {FB1_B6_C[2]}
+assign_port {cdata_wr[12]} -trace {FB1_B6_C[3]}
+assign_port {cdata_wr[13]} -trace {FB1_B6_C[4]}
+assign_port {cdata_wr[14]} -trace {FB1_B6_C[5]}
+assign_port {cdata_wr[15]} -trace {FB1_B6_C[6]}
+assign_port {cdata_wr[16]} -trace {FB1_B6_C[7]}
+assign_port {cdata_wr[17]} -trace {FB1_B6_C[8]}
+assign_port {cdata_wr[18]} -trace {FB1_B6_C[9]}
+assign_port {cdata_wr[19]} -trace {FB1_B6_C[10]}
+assign_port {cdata_wr[1]} -trace {FB1_B6_B[2]}
+assign_port {cdata_wr[2]} -trace {FB1_B6_B[3]}
+assign_port {cdata_wr[3]} -trace {FB1_B6_B[4]}
+assign_port {cdata_wr[4]} -trace {FB1_B6_B[5]}
+assign_port {cdata_wr[5]} -trace {FB1_B6_B[6]}
+assign_port {cdata_wr[6]} -trace {FB1_B6_B[7]}
+assign_port {cdata_wr[7]} -trace {FB1_B6_B[8]}
+assign_port {cdata_wr[8]} -trace {FB1_B6_B[9]}
+assign_port {cdata_wr[9]} -trace {FB1_B6_B[10]}
+assign_port {clk} {FB1.PLL1}
+assign_port {crd} -trace {FB1_B6_C[11]}
+assign_port {csel[0]} -trace {FB1_B7_C[4]}
+assign_port {csel[1]} -trace {FB1_B5_A[11]}
+assign_port {csel[2]} -trace {FB1_B5_B[2]}
+assign_port {cwr} -trace {FB1_B5_D[8]}
+assign_port {iaddr[0]} -trace {FB1_B5_A[4]}
+assign_port {iaddr[10]} -trace {FB1_B5_B[6]}
+assign_port {iaddr[11]} -trace {FB1_B5_B[7]}
+assign_port {iaddr[1]} -trace {FB1_B5_A[5]}
+assign_port {iaddr[2]} -trace {FB1_B5_A[6]}
+assign_port {iaddr[3]} -trace {FB1_B5_A[7]}
+assign_port {iaddr[4]} -trace {FB1_B5_A[8]}
+assign_port {iaddr[5]} -trace {FB1_B5_A[9]}
+assign_port {iaddr[6]} -trace {FB1_B5_A[10]}
+assign_port {iaddr[7]} -trace {FB1_B5_B[3]}
+assign_port {iaddr[8]} -trace {FB1_B5_B[4]}
+assign_port {iaddr[9]} -trace {FB1_B5_B[5]}
+assign_port {idata[0]} -trace {FB1_B5_B[8]}
+assign_port {idata[10]} -trace {FB1_B5_C[8]}
+assign_port {idata[11]} -trace {FB1_B5_C[9]}
+assign_port {idata[12]} -trace {FB1_B5_C[10]}
+assign_port {idata[13]} -trace {FB1_B5_C[11]}
+assign_port {idata[14]} -trace {FB1_B5_D[2]}
+assign_port {idata[15]} -trace {FB1_B5_D[3]}
+assign_port {idata[16]} -trace {FB1_B5_D[4]}
+assign_port {idata[17]} -trace {FB1_B5_D[5]}
+assign_port {idata[18]} -trace {FB1_B5_D[6]}
+assign_port {idata[19]} -trace {FB1_B5_D[7]}
+assign_port {idata[1]} -trace {FB1_B5_B[9]}
+assign_port {idata[2]} -trace {FB1_B5_B[10]}
+assign_port {idata[3]} -trace {FB1_B5_B[11]}
+assign_port {idata[4]} -trace {FB1_B5_C[2]}
+assign_port {idata[5]} -trace {FB1_B5_C[3]}
+assign_port {idata[6]} -trace {FB1_B5_C[4]}
+assign_port {idata[7]} -trace {FB1_B5_C[5]}
+assign_port {idata[8]} -trace {FB1_B5_C[6]}
+assign_port {idata[9]} -trace {FB1_B5_C[7]}
+assign_port {ready} -trace {FB1_B5_A[3]}
+
+@S4.2 AP343 |Hierarchical Cell Assignments
+assign_cell {L0} {FB1.uB}
+   # LUT 688 DFF 72 
+assign_cell {L1} {FB1.uB}
+   # LUT 91 DFF 57 
+assign_cell {L2} {FB1.uB}
+   # LUT 44 DFF 47 
+
+@S4.3 AP344 |Random Logic Assignments
+assign_cell {M0.caddr_wr[11:0]} {FB1.uB}
+   # LUT 9 
+assign_cell {M0.caddr_rd[11:0]} {FB1.uB}
+   # LUT 9 
+assign_cell {M0.cdata_wr[19:0]} {FB1.uB}
+   # LUT 15 
+assign_cell {M0.un1_csel_3} {FB1.uB}
+assign_cell {M0.un1_csel_2} {FB1.uB}
+assign_cell {M0.cs[2:0]} {FB1.uB}
+   # DFF 3 
+assign_cell {M0.ns[2:0]} {FB1.uB}
+   # LUT 2 
+assign_cell {M0.busy} {FB1.uB}
+assign_cell {M0.un1_cs_2} {FB1.uB}
+assign_cell {M0.un1_ready} {FB1.uB}
+assign_cell {M0.un1_cs_1} {FB1.uB}
+assign_cell {M0.crd} {FB1.uB}
+assign_cell {M0.un1_cs[7:0]} {FB1.uB}
+   # LUT 6 
+assign_cell {M0.un1_csel_1} {FB1.uB}
+assign_cell {M0.un1_ZCR_complete} {FB1.uB}
+assign_cell {M0.un1_Finish1} {FB1.uB}
+assign_cell {M0.un1_busy} {FB1.uB}
+assign_cell {M0.un1_Finish2} {FB1.uB}
+assign_cell {M0.cwr} {FB1.uB}
+replicate_cell {clk} {FB1.uA FB1.uB}
+assign_cell {M0.un1_csel_4} {FB1.uB}
+assign_cell {hyper_connect_USR_LOCAL_RESET} {FB1.uA}
+replicate_cell {reset} {FB1.uA FB1.uB}
+assign_cell {M0.un1_csel[7:0]} {FB1.uB}
+   # LUT 6 
+assign_cell {M0.csel[2:0]} {FB1.uB}
+   # LUT 2 
+
+@S5 AP381 |Cell Connections
+cell_connections M0.cdata_wr[19:0] \
+   -total_connections 85 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 65 \
+   -bins {FB1.uB} -count 65 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 20 \
+   -usage {LUT 15 }
+
+cell_connections L1 \
+   -total_connections 73 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 51 \
+   -bins {FB1.uB} -count 51 \
+   -bins {} -count 1 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 20 \
+   -bins {FB1.uA FB1.uB FB1.PLL1} -count 1 \
+   -usage {LUT 91 DFF 57 }
+
+cell_connections L2 \
+   -total_connections 73 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 51 \
+   -bins {FB1.uB} -count 51 \
+   -bins {} -count 1 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 20 \
+   -bins {FB1.uA FB1.uB FB1.PLL1} -count 1 \
+   -usage {LUT 44 DFF 47 }
+
+cell_connections L0 \
+   -total_connections 70 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 34 \
+   -bins {FB1.uA FB1.uB} -count 1 \
+   -bins {FB1.uB} -count 34 \
+   -bins {} -count 1 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 33 \
+   -bins {FB1.uA FB1.uB FB1.PLL1} -count 1 \
+   -usage {LUT 688 DFF 72 }
+
+cell_connections M0.caddr_wr[11:0] \
+   -total_connections 54 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 42 \
+   -bins {FB1.uB} -count 42 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 12 \
+   -usage {LUT 9 }
+
+cell_connections M0.caddr_rd[11:0] \
+   -total_connections 41 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 29 \
+   -bins {FB1.uB} -count 29 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 12 \
+   -usage {LUT 9 }
+
+cell_connections M0.ns[2:0] \
+   -total_connections 17 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 15 \
+   -bins {FB1.uA FB1.uB} -count 1 \
+   -bins {FB1.uB} -count 15 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 1 \
+   -usage {LUT 2 }
+
+cell_connections M0.csel[2:0] \
+   -total_connections 16 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 12 \
+   -bins {FB1.uA FB1.uB} -count 1 \
+   -bins {FB1.uB} -count 12 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 3 \
+   -usage {LUT 2 }
+
+cell_connections M0.un1_csel[7:0] \
+   -total_connections 11 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 8 \
+   -bins {FB1.uB} -count 8 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 3 \
+   -usage {LUT 6 }
+
+cell_connections M0.un1_cs[7:0] \
+   -total_connections 11 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 11 \
+   -bins {FB1.uB} -count 11 \
+   -usage {LUT 6 }
+
+cell_connections M0.cs[2:0] \
+   -total_connections 8 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 6 \
+   -bins {FB1.uB} -count 6 \
+   -bins {} -count 1 \
+   -bins {FB1.uA FB1.uB FB1.PLL1} -count 1 \
+   -usage {DFF 3 }
+
+cell_connections M0.busy \
+   -total_connections 5 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 2 \
+   -bins {FB1.uB} -count 2 \
+   -bins {} -count 1 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 1 \
+   -bins {FB1.uA FB1.uB FB1.PLL1} -count 1 \
+   -usage {DFF 1 }
+
+cell_connections M0.un1_cs_2 \
+   -total_connections 5 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 5 \
+   -bins {FB1.uB} -count 5 \
+   -usage {LUT 1 }
+
+cell_connections M0.un1_cs_1 \
+   -total_connections 4 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 4 \
+   -bins {FB1.uB} -count 4 \
+   -usage {LUT 0 }
+
+cell_connections M0.un1_csel_3 \
+   -total_connections 4 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 4 \
+   -bins {FB1.uB} -count 4 \
+   -usage {LUT 0 }
+
+cell_connections M0.cwr \
+   -total_connections 4 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 3 \
+   -bins {FB1.uB} -count 3 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 1 \
+   -usage {LUT 0 }
+
+cell_connections M0.crd \
+   -total_connections 3 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 2 \
+   -bins {FB1.uB} -count 2 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 1 \
+   -usage {LUT 0 }
+
+cell_connections M0.un1_csel_1 \
+   -total_connections 3 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 3 \
+   -bins {FB1.uB} -count 3 \
+   -usage {LUT 0 }
+
+cell_connections M0.un1_csel_2 \
+   -total_connections 3 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 3 \
+   -bins {FB1.uB} -count 3 \
+   -usage {LUT 0 }
+
+cell_connections M0.un1_ready \
+   -total_connections 3 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 2 \
+   -bins {FB1.uB} -count 2 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 1 \
+   -usage {LUT 0 }
+
+cell_connections M0.un1_csel_4 \
+   -total_connections 3 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 3 \
+   -bins {FB1.uB} -count 3 \
+   -usage {LUT 0 }
+
+# Skipping cell_connections for replicated cell reset {FB1.uA FB1.uB}
+cell_connections M0.un1_ZCR_complete \
+   -total_connections 2 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 2 \
+   -bins {FB1.uB} -count 2 \
+   -usage {LUT 1 }
+
+cell_connections M0.un1_Finish2 \
+   -total_connections 2 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 2 \
+   -bins {FB1.uB} -count 2 \
+   -usage {LUT 1 }
+
+cell_connections M0.un1_busy \
+   -total_connections 2 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 1 \
+   -bins {FB1.uB} -count 1 \
+   -bins {FB1.uB FB1.uB|PORTS} -count 1 \
+   -usage {LUT 1 }
+
+cell_connections M0.un1_Finish1 \
+   -total_connections 2 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 2 \
+   -bins {FB1.uB} -count 2 \
+   -usage {LUT 1 }
+
+cell_connections hyper_connect_USR_LOCAL_RESET \
+   -total_connections 1 \
+   -assigned_bin FB1.uA -constrained_to FB1.uA -local_connections 0 \
+   -bins {FB1.uA FB1.uB} -count 1 \
+   -usage {}
+
+# Skipping cell_connections for replicated cell clk {FB1.uA FB1.uB}
+cell_connections M0.false \
+   -total_connections 1 \
+   -assigned_bin FB1.uB -unconstrained -local_connections 1 \
+   -bins {FB1.uB} -count 1 \
+   -usage {}
+
+cell_connections M0.true \
+   -total_connections 1 \
+   -assigned_bin FB1.uA -unconstrained -local_connections 0 \
+   -bins {FB1.uA FB1.uB} -count 1 \
+   -usage {}
+
+cell_connections false \
+   -total_connections 1 \
+   -assigned_bin FB1.uA -unconstrained -local_connections 0 \
+   -bins {FB1.uA FB1.uB} -count 1 \
+   -usage {}
+
+
+@S6 AP345 |Net and Global Routing Information
+@N: AP305 |This section contains information only for nets that are external to FPGAs
+@N: AP305 |The 'net_connections' reports in this section report only one cell or port per bin
+
+
+@S6.1 AP346 |Routed Nets
+
+net_attribute -tdm_qualified 0 iaddr[9]
+net_connections -num_pins 2 iaddr[9] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[9]}
+global_route iaddr[9] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[5]
+net_connections -num_pins 2 iaddr[5] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[5]}
+global_route iaddr[5] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[2]
+net_connections -num_pins 2 iaddr[2] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[2]}
+global_route iaddr[2] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[1]
+net_connections -num_pins 2 iaddr[1] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[1]}
+global_route iaddr[1] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[19]
+net_connections -num_pins 2 idata[19] \
+   -sink_cell {FB1.uB L0}
+global_route idata[19] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[17]
+net_connections -num_pins 2 idata[17] \
+   -sink_cell {FB1.uB L0}
+global_route idata[17] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[11]
+net_connections -num_pins 2 idata[11] \
+   -sink_cell {FB1.uB L0}
+global_route idata[11] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[6]
+net_connections -num_pins 2 idata[6] \
+   -sink_cell {FB1.uB L0}
+global_route idata[6] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[4]
+net_connections -num_pins 2 idata[4] \
+   -sink_cell {FB1.uB L0}
+global_route idata[4] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[0]
+net_connections -num_pins 2 idata[0] \
+   -sink_cell {FB1.uB L0}
+global_route idata[0] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[18]
+net_connections -num_pins 2 cdata_wr[18] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[18]}
+global_route cdata_wr[18] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[17]
+net_connections -num_pins 2 cdata_wr[17] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[17]}
+global_route cdata_wr[17] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[15]
+net_connections -num_pins 2 cdata_wr[15] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[15]}
+global_route cdata_wr[15] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[13]
+net_connections -num_pins 2 cdata_wr[13] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[13]}
+global_route cdata_wr[13] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[6]
+net_connections -num_pins 2 cdata_wr[6] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[6]}
+global_route cdata_wr[6] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[5]
+net_connections -num_pins 2 cdata_wr[5] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[5]}
+global_route cdata_wr[5] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[1]
+net_connections -num_pins 2 cdata_wr[1] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[1]}
+global_route cdata_wr[1] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[11]
+net_connections -num_pins 2 caddr_rd[11] \
+   -sink_port {TOP_IO_HT3_FB1_B7 caddr_rd[11]}
+global_route caddr_rd[11] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B7} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[9]
+net_connections -num_pins 2 caddr_rd[9] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[9]}
+global_route caddr_rd[9] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[2]
+net_connections -num_pins 2 cdata_wr[2] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[2]}
+global_route cdata_wr[2] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[3]
+net_connections -num_pins 2 caddr_rd[3] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[3]}
+global_route caddr_rd[3] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[2]
+net_connections -num_pins 2 caddr_rd[2] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[2]}
+global_route caddr_rd[2] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[0]
+net_connections -num_pins 2 caddr_rd[0] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[0]}
+global_route caddr_rd[0] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[11]
+net_connections -num_pins 2 caddr_wr[11] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[11]}
+global_route caddr_wr[11] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[10]
+net_connections -num_pins 2 caddr_wr[10] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[10]}
+global_route caddr_wr[10] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[8]
+net_connections -num_pins 2 caddr_wr[8] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[8]}
+global_route caddr_wr[8] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[8]
+net_connections -num_pins 2 idata[8] \
+   -sink_cell {FB1.uB L0}
+global_route idata[8] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[15]
+net_connections -num_pins 2 idata[15] \
+   -sink_cell {FB1.uB L0}
+global_route idata[15] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[7]
+net_connections -num_pins 2 caddr_wr[7] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[7]}
+global_route caddr_wr[7] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[6]
+net_connections -num_pins 2 caddr_wr[6] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[6]}
+global_route caddr_wr[6] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[5]
+net_connections -num_pins 2 caddr_wr[5] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[5]}
+global_route caddr_wr[5] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[16]
+net_connections -num_pins 2 idata[16] \
+   -sink_cell {FB1.uB L0}
+global_route idata[16] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[3]
+net_connections -num_pins 2 caddr_wr[3] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[3]}
+global_route caddr_wr[3] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[0]
+net_connections -num_pins 2 caddr_wr[0] \
+   -sink_port {TOP_IO_HT3_FB1_B5 caddr_wr[0]}
+global_route caddr_wr[0] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 crd
+net_connections -num_pins 2 crd \
+   -sink_port {TOP_IO_HT3_FB1_B6 crd}
+global_route crd \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cwr
+net_connections -num_pins 2 cwr \
+   -sink_port {TOP_IO_HT3_FB1_B5 cwr}
+global_route cwr \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[4]
+net_connections -num_pins 2 cdata_wr[4] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[4]}
+global_route cdata_wr[4] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[1]
+net_connections -num_pins 2 caddr_rd[1] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[1]}
+global_route caddr_rd[1] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[1]
+net_connections -num_pins 2 idata[1] \
+   -sink_cell {FB1.uB L0}
+global_route idata[1] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[10]
+net_connections -num_pins 2 idata[10] \
+   -sink_cell {FB1.uB L0}
+global_route idata[10] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[10]
+net_connections -num_pins 2 iaddr[10] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[10]}
+global_route iaddr[10] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[12]
+net_connections -num_pins 2 idata[12] \
+   -sink_cell {FB1.uB L0}
+global_route idata[12] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[0]
+net_connections -num_pins 2 iaddr[0] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[0]}
+global_route iaddr[0] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[8]
+net_connections -num_pins 2 cdata_wr[8] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[8]}
+global_route cdata_wr[8] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[10]
+net_connections -num_pins 2 caddr_rd[10] \
+   -sink_port {TOP_IO_HT3_FB1_B7 caddr_rd[10]}
+global_route caddr_rd[10] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B7} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[3]
+net_connections -num_pins 2 iaddr[3] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[3]}
+global_route iaddr[3] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 csel[2]
+net_connections -num_pins 3 csel[2] \
+   -sink_port {TOP_IO_HT3_FB1_B5 csel[2]} \
+   -sink_cell {FB1.uB M0.un1_csel[7:0]}
+global_route csel[2] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 csel[0]
+net_connections -num_pins 3 csel[0] \
+   -sink_port {TOP_IO_HT3_FB1_B7 csel[0]} \
+   -sink_cell {FB1.uB M0.un1_csel[7:0]}
+global_route csel[0] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B7} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[4]
+net_connections -num_pins 2 caddr_rd[4] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[4]}
+global_route caddr_rd[4] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[2]
+net_connections -num_pins 2 idata[2] \
+   -sink_cell {FB1.uB L0}
+global_route idata[2] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[14]
+net_connections -num_pins 2 idata[14] \
+   -sink_cell {FB1.uB L0}
+global_route idata[14] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 ready
+net_connections -num_pins 4 ready \
+   -sink_cell {FB1.uB L0}
+global_route ready \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[5]
+net_connections -num_pins 2 caddr_rd[5] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[5]}
+global_route caddr_rd[5] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[4]
+net_connections -num_pins 2 iaddr[4] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[4]}
+global_route iaddr[4] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[12]
+net_connections -num_pins 2 cdata_wr[12] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[12]}
+global_route cdata_wr[12] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 busy
+net_connections -num_pins 3 busy \
+   -sink_cell {FB1.uB M0.un1_busy} \
+   -sink_port {TOP_IO_HT3_FB1_B5 busy}
+global_route busy \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[18]
+net_connections -num_pins 3 cdata_rd[18] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[18] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[11]
+net_connections -num_pins 2 iaddr[11] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[11]}
+global_route iaddr[11] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[16]
+net_connections -num_pins 3 cdata_rd[16] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[16] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[4]
+net_connections -num_pins 2 caddr_wr[4] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[4]}
+global_route caddr_wr[4] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[13]
+net_connections -num_pins 3 cdata_rd[13] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[13] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[8]
+net_connections -num_pins 2 iaddr[8] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[8]}
+global_route iaddr[8] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[3]
+net_connections -num_pins 2 idata[3] \
+   -sink_cell {FB1.uB L0}
+global_route idata[3] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[12]
+net_connections -num_pins 3 cdata_rd[12] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[12] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[10]
+net_connections -num_pins 3 cdata_rd[10] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[10] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[11]
+net_connections -num_pins 3 cdata_rd[11] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[11] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[8]
+net_connections -num_pins 3 cdata_rd[8] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[8] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[7]
+net_connections -num_pins 3 cdata_rd[7] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[7] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[18]
+net_connections -num_pins 2 idata[18] \
+   -sink_cell {FB1.uB L0}
+global_route idata[18] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[3]
+net_connections -num_pins 2 cdata_wr[3] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[3]}
+global_route cdata_wr[3] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[1]
+net_connections -num_pins 3 cdata_rd[1] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[1] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[9]
+net_connections -num_pins 2 caddr_wr[9] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_wr[9]}
+global_route caddr_wr[9] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[7]
+net_connections -num_pins 2 cdata_wr[7] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[7]}
+global_route cdata_wr[7] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[0]
+net_connections -num_pins 3 cdata_rd[0] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[0] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[14]
+net_connections -num_pins 3 cdata_rd[14] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[14] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[16]
+net_connections -num_pins 2 cdata_wr[16] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[16]}
+global_route cdata_wr[16] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 csel[1]
+net_connections -num_pins 3 csel[1] \
+   -sink_port {TOP_IO_HT3_FB1_B5 csel[1]} \
+   -sink_cell {FB1.uB M0.un1_csel[7:0]}
+global_route csel[1] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[2]
+net_connections -num_pins 2 caddr_wr[2] \
+   -sink_port {TOP_IO_HT3_FB1_B5 caddr_wr[2]}
+global_route caddr_wr[2] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[10]
+net_connections -num_pins 2 cdata_wr[10] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[10]}
+global_route cdata_wr[10] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[0]
+net_connections -num_pins 2 cdata_wr[0] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[0]}
+global_route cdata_wr[0] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[17]
+net_connections -num_pins 3 cdata_rd[17] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[17] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[9]
+net_connections -num_pins 2 cdata_wr[9] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[9]}
+global_route cdata_wr[9] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[6]
+net_connections -num_pins 2 caddr_rd[6] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[6]}
+global_route caddr_rd[6] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[2]
+net_connections -num_pins 3 cdata_rd[2] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[2] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[14]
+net_connections -num_pins 2 cdata_wr[14] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[14]}
+global_route cdata_wr[14] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[19]
+net_connections -num_pins 3 cdata_rd[19] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[19] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[15]
+net_connections -num_pins 3 cdata_rd[15] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[15] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[5]
+net_connections -num_pins 2 idata[5] \
+   -sink_cell {FB1.uB L0}
+global_route idata[5] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[1]
+net_connections -num_pins 2 caddr_wr[1] \
+   -sink_port {TOP_IO_HT3_FB1_B5 caddr_wr[1]}
+global_route caddr_wr[1] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[7]
+net_connections -num_pins 2 caddr_rd[7] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[7]}
+global_route caddr_rd[7] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[19]
+net_connections -num_pins 2 cdata_wr[19] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[19]}
+global_route cdata_wr[19] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[6]
+net_connections -num_pins 3 cdata_rd[6] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[6] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[6]
+net_connections -num_pins 2 iaddr[6] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[6]}
+global_route iaddr[6] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_connections -num_pins 2 reset \
+   -sink_cell {FB1.uA reset} \
+   -sink_cell {FB1.uB reset}
+global_route reset \
+   -from FB1.uA -to {FB1.uB} -using T_FB1.uA_FB1.uB_2 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[11]
+net_connections -num_pins 2 cdata_wr[11] \
+   -sink_port {TOP_IO_HT3_FB1_B6 cdata_wr[11]}
+global_route cdata_wr[11] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[9]
+net_connections -num_pins 3 cdata_rd[9] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[9] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[7]
+net_connections -num_pins 2 iaddr[7] \
+   -sink_port {TOP_IO_HT3_FB1_B5 iaddr[7]}
+global_route iaddr[7] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[3]
+net_connections -num_pins 3 cdata_rd[3] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[3] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[7]
+net_connections -num_pins 2 idata[7] \
+   -sink_cell {FB1.uB L0}
+global_route idata[7] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[4]
+net_connections -num_pins 3 cdata_rd[4] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[4] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -function GCLK -tdm_qualified 0 -is_clock 1 -feedthrough_allowed 0 clk
+net_connections -num_pins 7 clk \
+   -sink_cell {FB1.uB L2} \
+   -sink_cell {FB1.uA clk}
+global_route clk \
+   -from FB1.PLL1 -to {FB1.uA FB1.uB} -using T_FB1.PLL1_FB1.uA_FB1.uB_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[5]
+net_connections -num_pins 3 cdata_rd[5] \
+   -sink_cell {FB1.uB L2}
+global_route cdata_rd[5] \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[9]
+net_connections -num_pins 2 idata[9] \
+   -sink_cell {FB1.uB L0}
+global_route idata[9] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[8]
+net_connections -num_pins 2 caddr_rd[8] \
+   -sink_port {TOP_IO_HT3_FB1_B6 caddr_rd[8]}
+global_route caddr_rd[8] \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[13]
+net_connections -num_pins 2 idata[13] \
+   -sink_cell {FB1.uB L0}
+global_route idata[13] \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+

@@ -1,0 +1,651 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|pa0
+Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+
+THE FORMAT OF THIS LOG MAY CHANGE WITHOUT NOTICE
+
+@N: AP405 |Writing Partition Report to partition.rpt
+
+@N: AP376 |Using Partition Flow
+
+@S1 AP156 |Partitioning Environment Preparation
+@N: AP161 |Loading Connection Models
+@N: AP285 |Adding Connection Model 'ACPM' -- Simple asynchronous TDM using mux/demux logic with a counter, similar to legacy CPM
+@N: AP285 |Adding Connection Model 'HSTDM' -- Asynchronous High Speed TDM using IOSERDES with source synchronous clocks and training
+@N: AP285 |Adding Connection Model 'HSTDM_ERD' -- High Speed TDM with runtime error detection (ERD)
+@N: AP285 |Adding Connection Model 'MGTDM' -- MGT TDM 
+@N: AP285 |Adding Connection Model 'MGTDM_Y' -- MGT TDM 
+@N: AP163 |Loading Target System Specification
+Building target system...
+@N| Assigning syn_chip_id 0 to FPGA FB1.uA.
+@N| Assigning syn_chip_id 1 to FPGA FB1.uB.
+@N| Assigning syn_chip_id 2 to FPGA FB1.uC.
+@N| Assigning syn_chip_id 3 to FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N: AP250 |TargetSystem Summary
+Name: 'DETAIL' Bins: 15
+
+FPGA_Bin Pins LUT     LUTM    DFF     BRAM URAM DSP  ZDPIMOD IO    
+------------------------------------------------------------------
+FB1.uA    205 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uB    361 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uC    105 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uD    105 4085760 2042880 8171520 2160 320  3840 992     2072  
+==================================================================
+
+Port_Bin          Pins Capacity 
+-------------------------------
+TOP_IO_HT3_FB1_B5 52   52       
+TOP_IO_HT3_FB1_B6 52   52       
+TOP_IO_HT3_FB1_B7 52   52       
+===============================
+
+External_Bin Pins        
+------------------------
+FB1.PLL1     2    LOCKED 
+FB1.PLL2     0    LOCKED 
+FB1.PLL3     0    LOCKED 
+FB1.PLL4     0    LOCKED 
+FB1.PLL5     0    LOCKED 
+FB1.PLL6     0    LOCKED 
+FB1.PLL7     0    LOCKED 
+FB1.PLL8     0    LOCKED 
+========================
+
+Connectivity               Point-to-Point Mult-Terminal 
+-------------------------------------------------------
+FB1.uA<->FB1.uB (FIXED)    81             0             
+FB1.uA<->FB1.uB            98             0             
+FB1.uC<->FB1.uD (FIXED)    81             0             
+FB1.uB<->TOP_IO_HT3_FB1_B5 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B6 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B7 52             0             
+=======================================================
+
+Function_Name Trace_Count 
+-------------------------
+GCLK          2           
+MGT           16          
+MGT_DEBUG     32          
+=========================
+
+@S2 AP157 |Design & Constraint Load and Preparation
+
+@S2.1 AP123 |Loading Design
+@N: AP147 |Reading netlist: /home/course/csr530604/final_project/CONV/partition/pa0/synwork/top_part.srs
+@N: AP152 |(Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 654MB peak: 654MB)
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+
+Start loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 654MB peak: 654MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 658MB peak: 658MB)
+
+@N: AP119 |Uniquifying Design
+@N: AP120 |Building Partitioner Data Structures
+@N: AP165 |Reading estimate file: /home/course/csr530604/final_project/CONV/partition/pa0/top.est
+
+@S2.2 AP149 |Reading PCF Constraints
+@N: AP219 |Reading file: /home/course/csr530604/final_project/partition.pcf
+@N: AP500 |Using TDM type 'HSTDMSE'
+@W: AP935 |reset_synchronize -toplevel_net is deprecated, please use -net.
+	from source: /home/course/csr530604/final_project/partition.pcf at line: 19
+@W: AP309 |Assigned trace and net functions differ; function changed to 'GCLK' for net clk
+	Check that the function defined with the net_attribute command is listed prior to the assignment
+
+@N: AP238 |Target System Summary After Constraints: 
+Name: 'DETAIL' Bins: 15
+
+FPGA_Bin Pins LUT     LUTM    DFF     BRAM URAM DSP  ZDPIMOD IO    
+------------------------------------------------------------------
+FB1.uA    205 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uB    361 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uC    105 LOCKED                                               
+FB1.uD    105 LOCKED                                               
+==================================================================
+
+Port_Bin          Pins Capacity 
+-------------------------------
+TOP_IO_HT3_FB1_B5 52   52       
+TOP_IO_HT3_FB1_B6 52   52       
+TOP_IO_HT3_FB1_B7 52   52       
+===============================
+
+External_Bin Pins        
+------------------------
+FB1.PLL1     2    LOCKED 
+FB1.PLL2     0    LOCKED 
+FB1.PLL3     0    LOCKED 
+FB1.PLL4     0    LOCKED 
+FB1.PLL5     0    LOCKED 
+FB1.PLL6     0    LOCKED 
+FB1.PLL7     0    LOCKED 
+FB1.PLL8     0    LOCKED 
+========================
+
+Connectivity               Point-to-Point Mult-Terminal 
+-------------------------------------------------------
+FB1.uA<->FB1.uB (FIXED)    81             0             
+FB1.uA<->FB1.uB            98             0             
+FB1.uC<->FB1.uD (FIXED)    81             0             
+FB1.uB<->TOP_IO_HT3_FB1_B5 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B6 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B7 52             0             
+=======================================================
+
+Function_Name Trace_Count 
+-------------------------
+GCLK          2           
+MGT           16          
+MGT_DEBUG     32          
+=========================
+
+GCLK   Source    Assigned  Connected      
+Trace  Bin       Net       FPGAs          
+----------------------------------------
+GCLK1  FB1.PLL1  clk       FB1.uA FB1.uB  
+========================================
+
+@S2.3 AP126 |Initial Dissolve Step
+
+Top-level Netlist top
+   Cells(7) IO(12) TOP_IO(12) Nets(246/12)
+   Local: PORT 105 
+   Total: LUT 878 DFF 180 PORT 105 
+
+Target cell count after dissolve: 2000
+
+@S2.3.1 AP667 |Dissolving Must-dissolve Cells
+
+
+@S2.3.2 AP668 |Dissolving Cells Larger Than an FPGA
+
+
+@S2.3.3 AP669 |Dissolving Cells for Port Feasibility
+
+
+@S2.3.4 AP666 |Dissolving Cells for Partitioning by Size
+
+
+@S2.3.5 AP666 |Dissolving Cells for Partitioning by Connections
+
+Dissolving: M0
+   Cells(22) IO(187) TOP_IO(52) Nets(222/187)
+   Local: LUT 55 DFF 4 
+   Total: LUT 55 DFF 4 
+
+@S2.3.6 AP671 |Reporting the 3 Largest Cells
+
+L0
+   Cells(45) IO(71) TOP_IO(34) Nets(263/71)
+   Local: LUT 138 DFF 36 
+   Total: LUT 688 DFF 72 
+L1
+   Cells(64) IO(73) TOP_IO(21) Nets(212/73)
+   Local: LUT 91 DFF 57 
+   Total: LUT 91 DFF 57 
+L2
+   Cells(23) IO(73) TOP_IO(21) Nets(122/73)
+   Local: LUT 44 DFF 47 
+   Total: LUT 44 DFF 47 
+
+@S2.3.7 AP129 |Post-Dissolve Design Summary
+@N: AP679 |Design Summary After Dissolve
+    Cells: 31 Nets: 277 Pins: 721 Ports: 104
+    LUT 878 DFF 180 PORT 105 
+
+@S2.4 AP125 |Processing Implied Constraints
+
+@S2.5 AP289 |Find Clocks and TDM Restrictions
+@N: AP240 |Using TDM qualification mode: all
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 859MB peak: 859MB)
+
+@S2.6 AP130 |Building Primary Partitioning Graph
+
+@S2.7 AP420 |Constraint Summary
+
+To see a list of all unconstrained ports and/or cells, use option '-report_unconstrained ports|cells|all'
+
+Port Constraints:
+=================
+Ports  Bin_Assignment    
+------------------------
+ 40/52 TOP_IO_HT3_FB1_B6 
+ 23/52 TOP_IO_HT3_FB1_B7 
+  1    FB1.PLL1*         
+ 40/52 TOP_IO_HT3_FB1_B5 
+  0    UNASSIGNED        
+========================
+Total ports assigned: 104
+*Locked or external bin(s)
+
+Replication Constraints:
+========================
+Replicants Bin_Assignment               
+---------------------------------------
+         1 FB1.uA FB1.uB FB1.uC FB1.uD* 
+=======================================
+=== Total replicated cells: 1
+
+*Locked or external bin(s)
+
+Cell Constraints (includes constraints implied by port assignments):
+====================================================================
+Bin_Assignment Cells LUT 
+------------------------
+FB1.uA             1   0 
+FB1.uB            10  45 
+UNASSIGNED        16     
+========================
+Total cells assigned: 11
+
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 859MB peak: 859MB)
+
+@S3 AP160 |Optimizing Partitions
+@N: AP158 |Simplifying target system for partitioning
+
+@S3.1 AP481 |Partition Optimization Options
+
+Parameter                        Value        
+------------------------------------------
+Priority                         tdm_ratio    
+Movement engine                  fm           
+Max trials                       300          
+Solutions                        3            
+Hier Dissolve Pass               2            
+Feedthrough Reduction            low          
+Illegal Feedthrough Reduction    low          
+Feedthrough Routing              direct       
+Clock Crossing Reduction         low          
+Automatic Replication            medium       
+Clock Gate Replication           disabled     
+PMUX Decomposition               disabled     
+Clock Domain Dissolves           disabled     
+Net Channelization Method        hops         
+TDM Qualification Mode           all          
+==========================================
+
+
+@S3.2 AP131 |Hierarchy Pass 1
+
+@S3.2.1 AP133 |Clustering Design
+
+@S3.2.1.1 AP134 |Heuristic Pre-clustering
+@N: AP373 |    Start: Cell Clusters: 31 Port Clusters: 104 Nets: 276
+@N: AP373 |    End  : Cell Clusters: 31 Port Clusters: 104 Nets: 276
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 859MB peak: 859MB)
+
+@S3.2.1.2 AP136 |Connectivity-based Clustering
+Clusters: 135 Modularity: -8.72922e-35
+Clusters: 125 Modularity: 1.13841e-18
+Clusters: 123 Modularity: 1.24683e-18
+@N: AP373 |Final (Parallel): Cell Clusters: 19 Port Clusters: 104 Nets: 267
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 871MB peak: 871MB)
+
+@S3.2.2 AP137 |Generating Initial Solution
+@N: AP372 |Generating up to 300 solutions and keeping 3
+@N: AP154 |Using Genetic Optimizer
+@W: AP235 |Unable to find a path between bin FB1.uA(0) and FB1.uC(2). Check the configuration in the TSS file and add additional cables between the bins if necessary.
+@W: AP235 |Unable to find a path between bin FB1.uB(1) and FB1.uC(2). Check the configuration in the TSS file and add additional cables between the bins if necessary.
+@W: AP235 |Unable to find a path between bin FB1.uC(2) and FB1.uA(0). Check the configuration in the TSS file and add additional cables between the bins if necessary.
+@W: AP235 |Unable to find a path between bin FB1.uD(3) and FB1.uA(0). Check the configuration in the TSS file and add additional cables between the bins if necessary.
+Total:Routing Opt = 4.11794e+08;
+  Routing Opt: Solution 0 Nets 1 Feedthru 0 IllegalFeedthru 0 NoPath 2 MaxRatio 0.01 Channel 0.01 Overflow 0.00x0.00 Replications 1
+@N: AP155 |Initial solution converged after 64 trials
+
+Solution average correlation: 0.000000, 1 solutions in pool before pruning
+@N: AP150 |Best 1 Solutions
+Total:Routing Opt = 4.11794e+08;
+  Routing Opt: Solution 0 Nets 1 Feedthru 0 IllegalFeedthru 0 NoPath 2 MaxRatio 0.01 Channel 0.01 Overflow 0.00x0.00 Replications 1
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 871MB peak: 871MB)
+
+@S3.2.3 AP139 |Recursive Cluster Decomposition and Partition Optimization
+
+@S3.2.3.1 AP141 |Decompose and optimize
+@N: AP373 |After Decomposition: Cell Clusters: 31 Port Clusters: 104 Nets: 276
+@N: AP150 |Best 1 Solutions
+Total:Routing Opt:Clock Crossing = 4.11794e+08;
+  Routing Opt: Solution 0 Nets 1 Feedthru 0 IllegalFeedthru 0 NoPath 2 MaxRatio 0.01 Channel 0.01 Overflow 0.00x0.10 Replications 1
+  Clock Crossing:  0 FF Cost 0 Cost 0
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 871MB peak: 871MB)
+
+@S3.2.3.2 AP142 |Re-Clustering Design
+Clusters: 135 Modularity: -8.72922e-35
+Clusters: 125 Modularity: 1.13841e-18
+Clusters: 123 Modularity: 1.24683e-18
+@N: AP373 |Final (Parallel): Cell Clusters: 19 Port Clusters: 104 Nets: 267
+@N: AP150 |Best 1 Solutions
+Total:Routing Opt:Clock Crossing = 4.11794e+08;
+  Routing Opt: Solution 0 Nets 1 Feedthru 0 IllegalFeedthru 0 NoPath 2 MaxRatio 0.01 Channel 0.01 Overflow 0.00x0.10 Replications 1
+  Clock Crossing:  0 FF Cost 0 Cost 0
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 871MB peak: 871MB)
+
+Clustering types used in hierarchy pass 1: MM
+
+@S3.2.3.3 AP141 |Decompose and optimize
+@N: AP373 |After Decomposition: Cell Clusters: 31 Port Clusters: 104 Nets: 276
+@N: AP150 |Best 1 Solutions
+Total:Routing Opt:Clock Crossing = 4.11794e+08;
+  Routing Opt: Solution 0 Nets 1 Feedthru 0 IllegalFeedthru 0 NoPath 2 MaxRatio 0.01 Channel 0.01 Overflow 0.00x0.10 Replications 1
+  Clock Crossing:  0 FF Cost 0 Cost 0
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 871MB peak: 871MB)
+
+@S3.3 AP131 |Hierarchy Pass 2
+
+@S3.3.1 AP132 |Dissolve Based on Current Partition State
+Nothing to dissolve
+@N: AP633 |Replicated cell 'reset' has no load in bins {FB1.uA FB1.uC FB1.uD}. New target bins: {FB1.uB}.
+
+@S4 AP301 |Partitioner Results
+
+@S4.1 AP140 |Bin Usage Summary
+
+FPGA_Bin Cells Lock LUT    %  DFF    %  
+---------------------------------------
+FB1.uA       5      0      0% 1      0% 
+FB1.uB      28      878    0% 181    0% 
+=======================================
+
+Port_Bin     Lock Count    % 
+----------------------------
+FB1.uB|PORTS        103  66% 
+============================
+
+External_Bin Cells Lock 
+-----------------------
+FB1.PLL1         1 LOCK 
+=======================
+Solution contains 2 replicated cells
+
+
+@S4.2 AP751 |Final Partition Cost
+
+Total:Routing Opt:Clock Crossing = 752159;
+  Routing Opt: Solution 0 Nets 1 Feedthru 0 MaxRatio 0.01 Channel 0.01 Overflow 0.00x0.10 Replications 2
+  Clock Crossing:  0 FF Cost 0 Cost 0
+
+@S4.3 AP436 |TDM Ratio/Net Cost Function Reports
+
+@S4.3.1 AP751 |Final Partition Cost
+
+Solution 0 Nets 1 Feedthru 0 MaxRatio 0.01 Channel 0.01 Overflow 0.00x0.10 Replications 2
+
+@S4.3.2 AP864 |Partitioner Net Crossing Report
+
+Bins                    Net Crossings 
+-------------------------------------
+FB1.uA <-> FB1.uB                   1 
+FB1.uB <-> FB1.uB|PORTS           103 
+=====================================
+<-> is used to show bins with a direct connection
+<||> shows that nets will need to be routed with a feedthrough
+
+
+@S4.3.3 AP407 |Partitioner Ratio Estimate* Report
+
+                  Available  Direct Feedthrough TDM   TDM** 
+Connectivity      TDM Traces  Usage      Usage* Usage Ratio 
+-----------------------------------------------------------
+FB1.uA <-> FB1.uB        104      0           0     1  0.01 
+===========================================================
+*  This report may not match the Global Route reports
+** (TDM Ratio) = (TDM Usage) / ( (Available TDM Traces) - (Direct Usage) )
+
+
+@S4.3.4 AP505 |Partitioner DIRECT Inter-FPGA Nets
+
+To see a list of all nets that must be routed without TDM, use option '-report_direct_nets 1'
+
+@S4.4 AP507 |Initializing Timing Graph
+Cells: 31 Nets: 277 Pins: 721 Ports: 104
+    LUT 878 DFF 180 PORT 105 
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 919MB peak: 919MB)
+
+@S4.5 AP786 |Clock Usage Report
+Clock Area Estimation --
+Percentage of design connected to each clock at the current dissolve state. Total may be greater than 100%
+
+% of Design  Period  Clock   
+---------------------------
+   100.000%  1000.0  System  
+   100.000%    45.0  clk     
+===========================
+
+
+@S4.6 AP752 |Multi-hop Cost Function Reports
+
+@S4.6.1 AP756 |Cost Summary
+
+Solution 0 Nets 1 Feedthru 0 MaxRatio 0.01 Channel 0.01 Overflow 0.00 Replications 2
+     Hops 0 LongPath 1 LongPathCost 0.000 TotalHopLength 0
+
+@S4.6.2 AP864 |Partitioner Net Crossing Report
+
+Bins                    Net Crossings 
+-------------------------------------
+FB1.uA <-> FB1.uB                   1 
+FB1.uB <-> FB1.uB|PORTS           103 
+=====================================
+<-> is used to show bins with a direct connection
+<||> shows that nets will need to be routed with a feedthrough
+
+
+@S4.6.3 AP407 |Partitioner Ratio and Multi-Hop Estimate* Report
+
+                   Direct  Feedthrough  Multi-Hop  Multi-Hop  TDM    Available   TDM**  
+Connectivity        Usage       Usage*      Usage      Ratio  Usage  TDM Traces  Ratio  
+--------------------------------------------------------------------------------------
+FB1.uA <-> FB1.uB       0            0          0          0      1         104   0.01  
+FB1.uC <-> FB1.uD       0            0          0          0      0          60   0.00  
+======================================================================================
+*  This report may not match the Global Route reports
+** (Multi-Hop Trace Usage) = ((Multi-hop Usage) + (Feedthrough Usage)) / (Multi-hop Ratio)
+   (TDM Ratio) = (TDM Usage) / ( (Available TDM Traces) - (Multi-Hop Trace Usage) - (Direct Usage) )
+   Note that in some cases the algorithm that calculates TDM ratio may deviate from this formula
+
+
+@S4.6.4 AP431 |Multi-Hop Inter-FPGA Critical Net Connections
+
+To see a list of all nets that are part of a multi-hop path, use '-report_multi_hop_nets 1'
+
+@S4.6.5 AP790 |Clock Domain FPGA Usage
+Percentage of FPGA connected to each clock at the current dissolve state. Total may be greater than 100%
+
+Clock   FB1.uA              FB1.uB            
+         Usage  Capacity     Usage  Capacity  
+--------------------------------------------
+clk          0         0     99.4%      0.0%  
+System       0         0     99.4%      0.0%  
+============================================
+
+Multi-hop Combinational Path Analysis
+@N: AP405 |Writing Multi-hop Path Report to timing_partition.rpt
+@N: AP405 |Writing Partition Report to partition.rpt
+
+@S5 AP241 |Global Routing
+@N: AP634 |Using HSTDM type: Single-Ended 
+
+@S5.1 AP787 |Generating SRP netlist
+@N: AP405 |Writing SQL database containing cell assignments and net information to assignments.db
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N: AP405 |Writing Report of all nets qualified for TDM to tdm_qualified.rpt
+@N: AP405 |Writing Report of all nets disqualified for TDM to tdm_nonqualified.rpt
+@N: AP405 |Writing SQL database containing cell assignments and net information to assignments.db
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 919MB peak: 919MB)
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 919MB peak: 919MB)
+
+@S5.2 AP267 |Post-Partition Global Route Report
+
+@S5.2.1 AP271 |Global Route Net Path Summary
+
+TDM Qualification type: all
+
+Nets  TDM                           Traces                                             
+All   Qualified      Non-Qualified  All     TDM_usable  Connected_Bins                 
+-------------------------------------------------------------------------------------
+  40              0             40      52           0  FB1.uB TOP_IO_HT3_FB1_B5       
+  40              0             40      52           0  FB1.uB TOP_IO_HT3_FB1_B6       
+  23              0             23      52           0  FB1.uB TOP_IO_HT3_FB1_B7       
+   1              1              0     179         116  FB1.uA FB1.uB                  
+   1              0              1       2           0  FB1.uA FB1.uB FB1.PLL1 (GCLK)  
+=====================================================================================
+
+@S5.2.2 AP366 |Global Route Ratio Report
+
+Connection      Trace_Usage Net_Usage              Ratios   Bitrate Cablelength 
+                                  TDM DIRECT CLOCK          in Mbps in cm       
+-------------------------------------------------------------------------------
+FB1.uA<->FB1.uB       1/179         0      1     0                  50          
+FB1.uC<->FB1.uD        0/81         0      0     0 Not used                     
+===============================================================================
+
+@S5.2.3 AP265 |Global Route Trace Usage
+
+Trace  Function  Trace_Usage  Clock_Usage  Net_Usage  Module  Trace_Name/Connection                    Bitrate  Cablelength  
+---------------------------------------------------------------------------------------------------------------------------
+   1)  GCLK              1/2                       1          Trace Group: T_FB1.PLL1_FB1.uA_FB1.uB_1                        
+                           1            0          1  DIRECT  FB1.PLL1.CLK1-> {FB1.uA.CLK FB1.uB.CLK}                        
+                                                                                                                             
+   2)                  40/52                      40          Trace Group: TOP_IO_HT3_FB1_B6                                 
+                          40            0         40  DIRECT  FB1.uB.J6-> {TOP_IO_HT3_FB1_B6.A}                              
+                                                                                                                             
+   3)                  40/52                      40          Trace Group: TOP_IO_HT3_FB1_B5                                 
+                          19            0         19  DIRECT  FB1.uB.J5-> {TOP_IO_HT3_FB1_B5.A}                              
+                          21            0         21  DIRECT  TOP_IO_HT3_FB1_B5.A-> {FB1.uB.J5}                              
+                                                                                                                             
+   4)                  23/52                      23          Trace Group: TOP_IO_HT3_FB1_B7                                 
+                           3            0          3  DIRECT  FB1.uB.J7-> {TOP_IO_HT3_FB1_B7.A}                              
+                          20            0         20  DIRECT  TOP_IO_HT3_FB1_B7.A-> {FB1.uB.J7}                              
+                                                                                                                             
+   5)                    1/7                       1          Trace Group: T_FB1.uA_FB1.uB_2                                 
+                           1            0          1  DIRECT  FB1.uA.FIXED-> {FB1.uB.FIXED}                                  
+                                                                                                                             
+===========================================================================================================================
+
+@S5.2.4 AP426 |Multi-Hop Report
+
+Hops Number          Number        
+     Inter-FPGA Nets Toplevel Nets 
+----------------------------------
+1    1               103           
+==================================
+
+@S5.2.5 AP267 |Global Route Summary
+@N: AP367 |Routed 105 Nets
+@N: AP268 |Maximum TDM Ratio: 1
+@N: AP684 |Cut Clocks: 0
+@N: AP368 |Feedthroughs: 0
+@N: AP270 |Unrouted: 0
+
+@S5.2.6 AP267 |Global Route Direct Nets
+
+To see a list of all nets that must be routed without TDM, use option '-report_direct_nets 1'
+
+@N: AP371 |For global routing details, refer to partition.rpt
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 919MB peak: 919MB)
+
+@S6 AP246 |Writing Results
+@N: AP405 |Writing Partition Assignment Results to assignments.pcf
+@N: AP405 |Writing User Net Attributes to net_attributes.pcf
+@N: AP405 |Writing Partition dissolve statements to dissolve_control.pcf
+
+@N: AP405 |Writing Assignment CSV File to cell_assignments.csv
+
+@S7 AP581 |Key parameters from this run
+
+@N: BN341 |CHANNEL: results of channel optimization
+   feedthru - number of routing feedthroughs
+   illegalft - number of illegal feedthroughs
+   maxratio - estimated maximum tdm ratio
+   multitermbd - number of multiterminal bidir connections
+   nets - number of nets crossing FPGAs
+   ovf - overflow cost; non-zero values may mean severe congestion
+
+@N: BN341 |CLKCROSS: results of clock crossing optimization
+   partition - partitioner's estimate of number of clocks that cross FPGAs
+
+@N: BN341 |HOPS: results of multi-hop path optimization
+   hopnets - number of nets that are part of multi-hop paths
+   maxhops - number of hops in the longest path
+
+@N: BN341 |OPTIONS: The optimization options used for this run
+   bdc - illegal feedthrough cost
+   clkdissolve - Clock domain dissolves enabled
+   clkrepl - clock gate replication enabled
+   cxc - clock crossing reduction cost
+   engine - the movement engine used in partitioning
+   ftc - feedthrough cost
+   fttdm - feedthrough routing type
+   hierpass - number of hierarchy dissolve pass
+   pmux - PMUX decomposition enabled
+   prio - optmization_priority
+   repl - automatic replication enabled
+   slns - number of solutions to optimize in parallel
+   trials - maximum number of trials for initial solution
+
+@N: BN341 |SETUP: Design and Target System Stats
+   Cells - number of cells after final dissolve step
+   Nets - number of nets after final dissolve step
+   Ports - number of top-level ports
+   usedFPGAs - number of FPGAs with assigned cells
+
+KEY_PARAMETER,CHANNEL,nets,1,feedthru,0,illegalft,0,multitermbd,0,maxratio,0.00961538,ovf,0
+KEY_PARAMETER,CLKCROSS,partition,0
+KEY_PARAMETER,CLUSTER,endCl,19,clNets,267
+KEY_PARAMETER,CONSTRAINTS,ports_assigned,104,ports_unassigned,0,cells_assigned,11,cells_unassigned,16
+KEY_PARAMETER,COST,initSln,4.11794e+08,finalSln,752159
+KEY_PARAMETER,COST_STAT,reset,1,delta,0,accept,0
+KEY_PARAMETER,HOPS,hopnets,0,maxhops,1
+KEY_PARAMETER,OPTIONS,prio,tdm_ratio,engine,fm,trials,300,slns,3,hierpass,2,ftc,low,bdc,low,fttdm,direct,cxc,low,repl,medium,clkrepl,disabled,pmux,disabled,clkdissolve,disabled,tdmqual,all,netch,hops
+KEY_PARAMETER,ROUTER,trace_usage,22.5322,num_1_hops,104,max_hops,1,routed_nets,105,max_ratio,1,cut_clocks,0,feedthroughs,0,unrouted_nets,0
+KEY_PARAMETER,RUNTIME,tassign,0.00467055,fpt,0.00340668,fpc,10,ipt,0,ipc,0,total,8.79037,cpu,8.72867
+KEY_PARAMETER,SETUP,usedFPGAs,2,Cells,31,Nets,277,Ports,104
+KEY_PARAMETER,SOFT,softConstraintsCount,0,softConstraintsRespected,0,softConstraintsFactor,1
+
+THE FORMAT OF THIS LOG MAY CHANGE WITHOUT NOTICE
+
+@N: AP225 |Autopartitioner exiting with status 0
+Process took 0h:00m:08s realtime, 0h:00m:08s cputime
+# Thu Apr 20 12:40:15 2023
+
+###########################################################]

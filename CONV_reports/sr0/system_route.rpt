@@ -1,0 +1,686 @@
+#
+#Copyright (C) 1994-2021 Synopsys, Inc.
+#This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+#and may only be used pursuant to the terms and conditions of a written license agreement
+#with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+#Synopsys software or the associated documentation is strictly prohibited.
+#Tool: HAPS (R) ProtoCompiler 100
+#Build: R-2020.12-SP1-1
+#Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+#OS: CentOS release 6.10 (Final)
+#Hostname: ws25
+
+#Database state : /home/course/csr530604/final_project/CONV/|sr0
+#Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+
+@S1 AP337 |Connection Model
+connection_model DIRECT -modules { \
+}
+connection_model HSTDM_ERD -modules { \
+   HSTDM_ERD_7 7
+   HSTDM_ERD_15 15
+   HSTDM_ERD_22 22
+   HSTDM_ERD_30 30
+   HSTDM_ERD_37 37
+   HSTDM_ERD_45 45
+   HSTDM_ERD_52 52
+   HSTDM_ERD_60 60
+   HSTDM_ERD_67 67
+   HSTDM_ERD_75 75
+   HSTDM_ERD_82 82
+   HSTDM_ERD_90 90
+   HSTDM_ERD_97 97
+   HSTDM_ERD_105 105
+   HSTDM_ERD_112 112
+   HSTDM_ERD_120 120
+   HSTDM_ERD_150 150
+   HSTDM_ERD_180 180
+   HSTDM_ERD_210 210
+   HSTDM_ERD_240 240
+}
+connection_model ACPM -modules { \
+   ACPM_2 2
+   ACPM_3 3
+   ACPM_4 4
+   ACPM_5 5
+   ACPM_6 6
+   ACPM_7 7
+   ACPM_8 8
+   ACPM_9 9
+   ACPM_10 10
+   ACPM_11 11
+   ACPM_12 12
+   ACPM_13 13
+   ACPM_14 14
+   ACPM_15 15
+   ACPM_16 16
+   ACPM_17 17
+   ACPM_18 18
+   ACPM_19 19
+   ACPM_20 20
+   ACPM_24 24
+   ACPM_28 28
+   ACPM_32 32
+}
+connection_model HSTDM -modules { \
+   HSTDM_8 8
+   HSTDM_16 16
+   HSTDM_24 24
+   HSTDM_32 32
+   HSTDM_40 40
+   HSTDM_48 48
+   HSTDM_56 56
+   HSTDM_64 64
+   HSTDM_72 72
+   HSTDM_80 80
+   HSTDM_88 88
+   HSTDM_96 96
+   HSTDM_104 104
+   HSTDM_112 112
+   HSTDM_120 120
+   HSTDM_128 128
+   HSTDM_160 160
+   HSTDM_192 192
+   HSTDM_224 224
+   HSTDM_256 256
+}
+connection_model HSTDMSE -modules { \
+   HSTDM_8 8
+   HSTDM_16 16
+   HSTDM_24 24
+   HSTDM_32 32
+   HSTDM_40 40
+   HSTDM_48 48
+   HSTDM_56 56
+   HSTDM_64 64
+   HSTDM_72 72
+   HSTDM_80 80
+   HSTDM_88 88
+   HSTDM_96 96
+   HSTDM_104 104
+   HSTDM_112 112
+   HSTDM_120 120
+   HSTDM_128 128
+   HSTDM_160 160
+   HSTDM_192 192
+   HSTDM_224 224
+   HSTDM_256 256
+}
+connection_model HSTDMSE_ERD -modules { \
+   HSTDM_ERD_7 7
+   HSTDM_ERD_15 15
+   HSTDM_ERD_22 22
+   HSTDM_ERD_30 30
+   HSTDM_ERD_37 37
+   HSTDM_ERD_45 45
+   HSTDM_ERD_52 52
+   HSTDM_ERD_60 60
+   HSTDM_ERD_67 67
+   HSTDM_ERD_75 75
+   HSTDM_ERD_82 82
+   HSTDM_ERD_90 90
+   HSTDM_ERD_97 97
+   HSTDM_ERD_105 105
+   HSTDM_ERD_112 112
+   HSTDM_ERD_120 120
+   HSTDM_ERD_150 150
+   HSTDM_ERD_180 180
+   HSTDM_ERD_210 210
+   HSTDM_ERD_240 240
+}
+connection_model MGTDM_Y -modules { \
+   HSTDM_MGT_64 64
+   HSTDM_MGT_128 128
+   HSTDM_MGT_256 256
+   HSTDM_MGT_512 512
+   HSTDM_MGT_1024 1024
+}
+connection_model MGTDM -modules { \
+   HSTDM_ERD_MGT_256 256
+   HSTDM_ERD_MGT_512 512
+   HSTDM_ERD_MGT_1024 1024
+}
+
+@S2 AP248 |Feedthrough Insertion and Net Splitting
+
+modify_net -disconnect reset -connect reset -to FPGA FB1.uB -routing_tree_level 2
+reset_synchronize -net {reset} -sync_ff {aptn_reset_sync_reset} -pipeline_stages 5 -extra_pipeline_stages 2 -init 0 -bins {FB1.uA:5 FB1.uB:4} -no_of_regs {FB1.uA:6 FB1.uB:4 }
+
+@S3 AP345 |Net and Global Routing Information
+@N: AP305 |This section contains information only for nets that are external to FPGAs
+
+@S3.1 AP346 |Routed Nets
+
+net_attribute -tdm_qualified 0 iaddr[10]
+global_route iaddr[10] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[9]
+global_route iaddr[9] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[8]
+global_route iaddr[8] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[7]
+global_route iaddr[7] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[3]
+global_route iaddr[3] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[0]
+global_route iaddr[0] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[19]
+global_route idata[19] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[18]
+global_route idata[18] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[16]
+global_route idata[16] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[14]
+global_route idata[14] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[17]
+global_route idata[17] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[11]
+global_route idata[11] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[8]
+global_route idata[8] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[6]
+global_route idata[6] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[1]
+global_route iaddr[1] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[5]
+global_route idata[5] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[18]
+global_route cdata_rd[18] -slack_pre_tdm 43 -slack_post_tdm 38 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[16]
+global_route cdata_rd[16] -slack_pre_tdm 43 -slack_post_tdm 38 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[5]
+global_route iaddr[5] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[19]
+global_route cdata_rd[19] -slack_pre_tdm 43 -slack_post_tdm 38 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[15]
+global_route cdata_rd[15] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[13]
+global_route cdata_rd[13] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[8]
+global_route cdata_rd[8] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[9]
+global_route idata[9] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[4]
+global_route cdata_rd[4] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[12]
+global_route cdata_rd[12] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[11]
+global_route cdata_rd[11] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[2]
+global_route cdata_rd[2] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[1]
+global_route cdata_rd[1] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[7]
+global_route idata[7] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[3]
+global_route idata[3] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 busy
+global_route busy -slack_pre_tdm 43 -slack_post_tdm 38 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[6]
+global_route iaddr[6] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 csel[1]
+global_route csel[1] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 csel[0]
+global_route csel[0] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B7} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[10]
+global_route cdata_rd[10] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[13]
+global_route idata[13] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[11]
+global_route caddr_rd[11] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B7} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[8]
+global_route caddr_rd[8] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[7]
+global_route caddr_rd[7] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[5]
+global_route caddr_rd[5] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[4]
+global_route caddr_rd[4] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[3]
+global_route caddr_rd[3] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[5]
+global_route cdata_rd[5] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[9]
+global_route cdata_rd[9] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[11]
+global_route iaddr[11] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[1]
+global_route caddr_rd[1] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[15]
+global_route idata[15] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[0]
+global_route caddr_rd[0] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[12]
+global_route idata[12] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[10]
+global_route caddr_wr[10] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[8]
+global_route caddr_wr[8] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 crd
+global_route crd -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[10]
+global_route idata[10] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[9]
+global_route caddr_rd[9] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[7]
+global_route caddr_wr[7] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[5]
+global_route caddr_wr[5] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[2]
+global_route caddr_rd[2] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 csel[2]
+global_route csel[2] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[4]
+global_route iaddr[4] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[3]
+global_route caddr_wr[3] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[14]
+global_route cdata_rd[14] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[1]
+global_route caddr_wr[1] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[18]
+global_route cdata_wr[18] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[11]
+global_route caddr_wr[11] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[2]
+global_route caddr_wr[2] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[7]
+global_route cdata_rd[7] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[15]
+global_route cdata_wr[15] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[9]
+global_route caddr_wr[9] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[14]
+global_route cdata_wr[14] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[4]
+global_route idata[4] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[0]
+global_route idata[0] -slack_pre_tdm 38 -slack_post_tdm 33 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[6]
+global_route caddr_wr[6] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[19]
+global_route cdata_wr[19] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 ready
+global_route ready -slack_pre_tdm 44 -slack_post_tdm 39 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[11]
+global_route cdata_wr[11] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[6]
+global_route cdata_wr[6] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[5]
+global_route cdata_wr[5] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 iaddr[2]
+global_route iaddr[2] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[7]
+global_route cdata_wr[7] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[3]
+global_route cdata_rd[3] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[6]
+global_route caddr_rd[6] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[4]
+global_route cdata_wr[4] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[1]
+global_route idata[1] -slack_pre_tdm 38 -slack_post_tdm 33 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[6]
+global_route cdata_rd[6] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[17]
+global_route cdata_wr[17] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[8]
+global_route cdata_wr[8] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[0]
+global_route caddr_wr[0] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[3]
+global_route cdata_wr[3] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[16]
+global_route cdata_wr[16] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[2]
+global_route cdata_wr[2] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[17]
+global_route cdata_rd[17] -slack_pre_tdm 43 -slack_post_tdm 38 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[1]
+global_route cdata_wr[1] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[10]
+global_route cdata_wr[10] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_rd[0]
+global_route cdata_rd[0] -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from TOP_IO_HT3_FB1_B7 -to {FB1.uB} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[0]
+global_route cdata_wr[0] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[9]
+global_route cdata_wr[9] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[12]
+global_route cdata_wr[12] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cwr
+global_route cwr -slack_pre_tdm 42 -slack_post_tdm 37 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B5} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 cdata_wr[13]
+global_route cdata_wr[13] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 reset
+global_route reset -slack_pre_tdm 43 -slack_post_tdm 36 \
+   -from FB1.uA -to {FB1.uB} -using T_FB1.uA_FB1.uB_2 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 idata[2]
+global_route idata[2] -slack_pre_tdm 39 -slack_post_tdm 34 \
+   -from TOP_IO_HT3_FB1_B5 -to {FB1.uB} -using TOP_IO_HT3_FB1_B5 -tdm DIRECT
+
+net_attribute -function GCLK -tdm_qualified 0 -is_clock 1 -feedthrough_allowed 0 clk
+global_route clk -slack_pre_tdm 100000 -slack_post_tdm 100000 \
+   -from FB1.PLL1 -to {FB1.uA FB1.uB} -using T_FB1.PLL1_FB1.uA_FB1.uB_1 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_rd[10]
+global_route caddr_rd[10] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B7} -using TOP_IO_HT3_FB1_B7 -tdm DIRECT
+
+net_attribute -tdm_qualified 0 caddr_wr[4]
+global_route caddr_wr[4] -slack_pre_tdm 41 -slack_post_tdm 36 \
+   -from FB1.uB -to {TOP_IO_HT3_FB1_B6} -using TOP_IO_HT3_FB1_B6 -tdm DIRECT
+
+
+@S4 AP306 |Detailed Routing Information
+@N: AP306 |This section contains information only for nets which are assigned to board traces
+
+@S4.1 AP348 |Trace Assignments
+
+assign_trace reset FB1.AI2_N[9]
+assign_trace busy FB1_B5_A[2]
+assign_trace iaddr[0] FB1_B5_A[4]
+assign_trace iaddr[1] FB1_B5_A[5]
+assign_trace iaddr[2] FB1_B5_A[6]
+assign_trace iaddr[3] FB1_B5_A[7]
+assign_trace iaddr[4] FB1_B5_A[8]
+assign_trace iaddr[5] FB1_B5_A[9]
+assign_trace iaddr[6] FB1_B5_A[10]
+assign_trace csel[1] FB1_B5_A[11]
+assign_trace csel[2] FB1_B5_B[2]
+assign_trace iaddr[7] FB1_B5_B[3]
+assign_trace iaddr[8] FB1_B5_B[4]
+assign_trace iaddr[9] FB1_B5_B[5]
+assign_trace iaddr[10] FB1_B5_B[6]
+assign_trace iaddr[11] FB1_B5_B[7]
+assign_trace cwr FB1_B5_D[8]
+assign_trace caddr_wr[0] FB1_B5_D[9]
+assign_trace caddr_wr[1] FB1_B5_D[10]
+assign_trace caddr_wr[2] FB1_B5_D[11]
+assign_trace caddr_wr[3] FB1_B6_A[2]
+assign_trace caddr_wr[4] FB1_B6_A[3]
+assign_trace caddr_wr[5] FB1_B6_A[4]
+assign_trace caddr_wr[6] FB1_B6_A[5]
+assign_trace caddr_wr[7] FB1_B6_A[6]
+assign_trace caddr_wr[8] FB1_B6_A[7]
+assign_trace caddr_wr[9] FB1_B6_A[8]
+assign_trace caddr_wr[10] FB1_B6_A[9]
+assign_trace caddr_wr[11] FB1_B6_A[10]
+assign_trace cdata_wr[0] FB1_B6_A[11]
+assign_trace cdata_wr[1] FB1_B6_B[2]
+assign_trace cdata_wr[2] FB1_B6_B[3]
+assign_trace cdata_wr[3] FB1_B6_B[4]
+assign_trace cdata_wr[4] FB1_B6_B[5]
+assign_trace cdata_wr[5] FB1_B6_B[6]
+assign_trace cdata_wr[6] FB1_B6_B[7]
+assign_trace cdata_wr[7] FB1_B6_B[8]
+assign_trace cdata_wr[8] FB1_B6_B[9]
+assign_trace cdata_wr[9] FB1_B6_B[10]
+assign_trace cdata_wr[10] FB1_B6_B[11]
+assign_trace cdata_wr[11] FB1_B6_C[2]
+assign_trace cdata_wr[12] FB1_B6_C[3]
+assign_trace cdata_wr[13] FB1_B6_C[4]
+assign_trace cdata_wr[14] FB1_B6_C[5]
+assign_trace cdata_wr[15] FB1_B6_C[6]
+assign_trace cdata_wr[16] FB1_B6_C[7]
+assign_trace cdata_wr[17] FB1_B6_C[8]
+assign_trace cdata_wr[18] FB1_B6_C[9]
+assign_trace cdata_wr[19] FB1_B6_C[10]
+assign_trace crd FB1_B6_C[11]
+assign_trace caddr_rd[0] FB1_B6_D[2]
+assign_trace caddr_rd[1] FB1_B6_D[3]
+assign_trace caddr_rd[2] FB1_B6_D[4]
+assign_trace caddr_rd[3] FB1_B6_D[5]
+assign_trace caddr_rd[4] FB1_B6_D[6]
+assign_trace caddr_rd[5] FB1_B6_D[7]
+assign_trace caddr_rd[6] FB1_B6_D[8]
+assign_trace caddr_rd[7] FB1_B6_D[9]
+assign_trace caddr_rd[8] FB1_B6_D[10]
+assign_trace caddr_rd[9] FB1_B6_D[11]
+assign_trace caddr_rd[10] FB1_B7_A[2]
+assign_trace caddr_rd[11] FB1_B7_A[3]
+assign_trace csel[0] FB1_B7_C[4]
+assign_trace ready FB1_B5_A[3]
+assign_trace idata[0] FB1_B5_B[8]
+assign_trace idata[1] FB1_B5_B[9]
+assign_trace idata[2] FB1_B5_B[10]
+assign_trace idata[3] FB1_B5_B[11]
+assign_trace idata[4] FB1_B5_C[2]
+assign_trace idata[5] FB1_B5_C[3]
+assign_trace idata[6] FB1_B5_C[4]
+assign_trace idata[7] FB1_B5_C[5]
+assign_trace idata[8] FB1_B5_C[6]
+assign_trace idata[9] FB1_B5_C[7]
+assign_trace idata[10] FB1_B5_C[8]
+assign_trace idata[11] FB1_B5_C[9]
+assign_trace idata[12] FB1_B5_C[10]
+assign_trace idata[13] FB1_B5_C[11]
+assign_trace idata[14] FB1_B5_D[2]
+assign_trace idata[15] FB1_B5_D[3]
+assign_trace idata[16] FB1_B5_D[4]
+assign_trace idata[17] FB1_B5_D[5]
+assign_trace idata[18] FB1_B5_D[6]
+assign_trace idata[19] FB1_B5_D[7]
+assign_trace cdata_rd[0] FB1_B7_A[4]
+assign_trace cdata_rd[1] FB1_B7_A[5]
+assign_trace cdata_rd[2] FB1_B7_A[6]
+assign_trace cdata_rd[3] FB1_B7_A[7]
+assign_trace cdata_rd[4] FB1_B7_A[8]
+assign_trace cdata_rd[5] FB1_B7_A[9]
+assign_trace cdata_rd[6] FB1_B7_A[10]
+assign_trace cdata_rd[7] FB1_B7_A[11]
+assign_trace cdata_rd[8] FB1_B7_B[2]
+assign_trace cdata_rd[9] FB1_B7_B[3]
+assign_trace cdata_rd[10] FB1_B7_B[4]
+assign_trace cdata_rd[11] FB1_B7_B[5]
+assign_trace cdata_rd[12] FB1_B7_B[6]
+assign_trace cdata_rd[13] FB1_B7_B[7]
+assign_trace cdata_rd[14] FB1_B7_B[8]
+assign_trace cdata_rd[15] FB1_B7_B[9]
+assign_trace cdata_rd[16] FB1_B7_B[10]
+assign_trace cdata_rd[17] FB1_B7_B[11]
+assign_trace cdata_rd[18] FB1_B7_C[2]
+assign_trace cdata_rd[19] FB1_B7_C[3]
+assign_trace clk GCLK1

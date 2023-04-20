@@ -1,0 +1,9 @@
+Distcomp, Library, Design Unit, compile Time, Peak Mem Usage
+0, work, top, 0h:00m:00s,    212 MB
+1, work, Layer2, 0h:00m:00s,    212 MB
+2, work, Layer1, 0h:00m:00s,    215 MB
+3, work, Layer0, 0h:00m:00s,    214 MB
+4, work, MCC, 0h:00m:00s,    212 MB
+5, work, Voter20, 0h:00m:00s,    213 MB
+6, work, CONV_TMR, 0h:00m:00s,    213 MB
+7, work, Multiplier20, 0h:00m:00s,    211 MB

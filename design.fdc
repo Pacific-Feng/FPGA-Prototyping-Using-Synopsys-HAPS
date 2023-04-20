@@ -1,0 +1,38 @@
+
+###==== BEGIN Clocks - (Populated from tab in SCOPE, do not edit)
+create_clock  -name {clk} {p:clk} -period {45}
+# create_clock  -name {clk2} {p:clk2} -period {50}
+
+#set_clock_groups -derive -asynchronous -name {d1} -group { {c:clk1}}
+#set_clock_groups -derive -asynchronous -name {d2} -group { {c:clk2}}
+###==== END Clocks
+
+###==== BEGIN "Generated Clocks" - (Populated from tab in SCOPE, do not edit)
+###==== END "Generated Clocks"
+
+###==== BEGIN Inputs/Outputs - (Populated from tab in SCOPE, do not edit)
+#set_input_delay -max 6.00  -clock {c:clk}  -add_delay {p:resetn}
+
+#set_output_delay -max 6.00  -clock {c:clk}  -add_delay {p:led_out1}
+#set_output_delay -max 6.00  -clock {c:clk2}  -add_delay {p:led_out2}
+
+###==== END Inputs/Outputs
+
+###==== BEGIN Registers - (Populated from tab in SCOPE, do not edit)
+###==== END Registers
+
+###==== BEGIN "Delay Paths" - (Populated from tab in SCOPE, do not edit)
+###==== END "Delay Paths"
+
+###==== BEGIN Attributes - (Populated from tab in SCOPE, do not edit)
+
+###==== END Attributes
+
+###==== BEGIN "I/O Standards" - (Populated from tab in SCOPE, do not edit)
+
+###==== END "I/O Standards"
+
+###==== BEGIN "Compile Points" - (Populated from tab in SCOPE, do not edit)
+###==== END "Compile Points"
+
+

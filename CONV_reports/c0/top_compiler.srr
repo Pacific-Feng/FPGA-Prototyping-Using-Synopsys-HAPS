@@ -1,0 +1,303 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|c0
+Synopsys HDL Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:14, @4216327
+
+@N|Running in 64-bit mode
+@N: Compiling unified compile database from "/home/course/csr530604/final_project/top_ucdb"
+###########################################################[
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|c0
+Synopsys SCM Compiler, Version comp202012pcp4, Build 193R, Built Apr  8 2022 21:30:28, @4216327
+
+@N: Running in 64-bit mode
+@N: Reading unified compile database from "/home/course/csr530604/final_project/top_ucdb/"
+@N: Running compiler in Fast Synthesis mode
+@N: Distributing compilation using maximum of 4 parallel jobs
+@N: Created 8 jobs for distributed compilation
+@N: Compilation of distcomp0 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp1 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp2 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp3 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp4 finished. Run time 0h:00m:02s
+@N: Compilation of distcomp5 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp6 finished. Run time 0h:00m:01s
+@N: Compilation of distcomp7 finished. Run time 0h:00m:01s
+###########################################################[
+@N: Running distributed compile: job0
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module top in library work of instance top.
+Running optimization stage 1 on top .......
+Finished optimization stage 1 on top (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on top .......
+Finished optimization stage 2 on top (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/distcomp/distcomp0/distcomp0.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:09 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job1
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Layer2 in library work of instance Layer2.
+Running optimization stage 1 on Layer2 .......
+Finished optimization stage 1 on Layer2 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on Layer2 .......
+Finished optimization stage 2 on Layer2 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/distcomp/distcomp1/distcomp1.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:09 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job2
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Layer1 in library work of instance Layer1.
+Running optimization stage 1 on Layer1 .......
+Finished optimization stage 1 on Layer1 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on Layer1 .......
+Finished optimization stage 2 on Layer1 (CPU Time 0h:00m:00s, Memory Used current: 215MB peak: 215MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/distcomp/distcomp2/distcomp2.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 215MB peak: 215MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:09 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job3
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Layer0 in library work of instance Layer0.
+Running optimization stage 1 on Layer0 .......
+Finished optimization stage 1 on Layer0 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on Layer0 .......
+@N: CL159 :"/home/course/csr530604/final_project/./src/Layer0.v":22:0:22:0|Input busy is unused.
+Finished optimization stage 2 on Layer0 (CPU Time 0h:00m:00s, Memory Used current: 214MB peak: 214MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/distcomp/distcomp3/distcomp3.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 214MB peak: 214MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:09 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job4
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module MCC in library work of instance MCC.
+Running optimization stage 1 on MCC .......
+Finished optimization stage 1 on MCC (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on MCC .......
+Finished optimization stage 2 on MCC (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/distcomp/distcomp4/distcomp4.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:10 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job5
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Voter20 in library work of instance Voter20.
+Running optimization stage 1 on Voter20 .......
+Finished optimization stage 1 on Voter20 (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on Voter20 .......
+Finished optimization stage 2 on Voter20 (CPU Time 0h:00m:00s, Memory Used current: 213MB peak: 213MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/distcomp/distcomp5/distcomp5.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 213MB peak: 213MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:10 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job6
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module CONV_TMR in library work of instance CONV_TMR.
+Running optimization stage 1 on CONV_TMR .......
+Finished optimization stage 1 on CONV_TMR (CPU Time 0h:00m:00s, Memory Used current: 212MB peak: 212MB)
+Running optimization stage 2 on CONV_TMR .......
+Finished optimization stage 2 on CONV_TMR (CPU Time 0h:00m:00s, Memory Used current: 213MB peak: 213MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/distcomp/distcomp6/distcomp6.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 213MB peak: 213MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:10 2023
+
+###########################################################]
+###########################################################[
+@N: Running distributed compile: job7
+###########################################################]
+###########################################################[
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_retarget.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/xilinx/unisim_vivado.v" (library deviceLib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/hypermods.v" (library hyperlib)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/vlog/umr_capim.v" (library haps)
+@I::"/usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1/lib/synip/hcei/zceistubs.v" (library haps)
+Synthesizing module Multiplier20 in library work of instance Multiplier20.
+Running optimization stage 1 on Multiplier20 .......
+Finished optimization stage 1 on Multiplier20 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 211MB)
+Running optimization stage 2 on Multiplier20 .......
+Finished optimization stage 2 on Multiplier20 (CPU Time 0h:00m:00s, Memory Used current: 211MB peak: 211MB)
+
+For a summary of runtime and memory usage per design unit, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/distcomp/distcomp7/distcomp7.rt.csv
+
+
+At c_scm Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 212MB peak: 212MB)
+
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:10 2023
+
+###########################################################]
+
+At c_scm Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 187MB peak: 197MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:04s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:13 2023
+
+###########################################################]
+
+For a summary of runtime and memory usage for all design units, please see file:
+==========================================================
+@L: /home/course/csr530604/final_project/CONV/compile/c0/synwork/top_comp.rt.csv
+
+@END
+
+At c_hdl Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 66MB peak: 66MB)
+
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+
+Process completed successfully.
+# Thu Apr 20 12:39:13 2023
+
+###########################################################]

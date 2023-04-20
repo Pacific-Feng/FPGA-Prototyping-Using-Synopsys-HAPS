@@ -1,0 +1,504 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|pp0
+
+
+##############################################################################
+#################### TARGET SYSTEM SPECIFICATION REPORT ######################
+##############################################################################
+
+
+System
+******
+Type          Name   
+---------------------
+HAPSYSTEM     haps100
+=====================
+
+
+Mother Boards
+*************
+Type           Name     Devices                
+-----------------------------------------------
+HAPS100_4F     FB1      4 XCVU19P-FSVA3824 FPGA
+===============================================
+
+
+Interconnect Boards
+*******************
+Type                 Name             Connections    
+-----------------------------------------------------
+CON_CABLE_50_HT3     FB1_A1_B19       FB1.A1  FB1.B19
+CON_CABLE_50_HT3     FB1_A2_B20       FB1.A2  FB1.B20
+=====================================================
+
+
+Daughter Boards
+***************
+Type           Name                    Connections
+--------------------------------------------------
+TOP_IO_HT3     TOP_IO_HT3_FB1_B5       FB1.B5     
+TOP_IO_HT3     TOP_IO_HT3_FB1_B6       FB1.B6     
+TOP_IO_HT3     TOP_IO_HT3_FB1_B7       FB1.B7     
+==================================================
+
+
+Clock Settings
+**************
+Name             Value
+----------------------
+FB1.UA.CLK1      GCLK1
+FB1.UB.CLK1      GCLK1
+FB1.UC.CLK1      off  
+FB1.UD.CLK1      off  
+FB1.UA.CLK2      GCLK2
+FB1.UB.CLK2      GCLK2
+FB1.UC.CLK2      off  
+FB1.UD.CLK2      off  
+FB1.UA.CLK3      off  
+FB1.UB.CLK3      off  
+FB1.UC.CLK3      off  
+FB1.UD.CLK3      off  
+FB1.UA.CLK4      off  
+FB1.UB.CLK4      off  
+FB1.UC.CLK4      off  
+FB1.UD.CLK4      off  
+FB1.UA.CLK5      off  
+FB1.UB.CLK5      off  
+FB1.UC.CLK5      off  
+FB1.UD.CLK5      off  
+FB1.UA.CLK6      off  
+FB1.UB.CLK6      off  
+FB1.UC.CLK6      off  
+FB1.UD.CLK6      off  
+FB1.UA.CLK7      off  
+FB1.UB.CLK7      off  
+FB1.UC.CLK7      off  
+FB1.UD.CLK7      off  
+FB1.UA.CLK8      off  
+FB1.UB.CLK8      off  
+FB1.UC.CLK8      off  
+FB1.UD.CLK8      off  
+FB1.UA.CLK9      off  
+FB1.UB.CLK9      off  
+FB1.UC.CLK9      off  
+FB1.UD.CLK9      off  
+FB1.UA.CLK10     off  
+FB1.UB.CLK10     off  
+FB1.UC.CLK10     off  
+FB1.UD.CLK10     off  
+FB1.UA.CLK11     off  
+FB1.UB.CLK11     off  
+FB1.UC.CLK11     off  
+FB1.UD.CLK11     off  
+FB1.UA.CLK12     off  
+FB1.UB.CLK12     off  
+FB1.UC.CLK12     off  
+FB1.UD.CLK12     off  
+FB1.UA.CLK13     off  
+FB1.UB.CLK13     off  
+FB1.UC.CLK13     off  
+FB1.UD.CLK13     off  
+FB1.UA.CLK14     off  
+FB1.UB.CLK14     off  
+FB1.UC.CLK14     off  
+FB1.UD.CLK14     off  
+FB1.UA.CLK15     off  
+FB1.UB.CLK15     off  
+FB1.UC.CLK15     off  
+FB1.UD.CLK15     off  
+FB1.UA.CLK16     off  
+FB1.UB.CLK16     off  
+FB1.UC.CLK16     off  
+FB1.UD.CLK16     off  
+FB1.UA.CLK17     off  
+FB1.UB.CLK17     off  
+FB1.UC.CLK17     off  
+FB1.UD.CLK17     off  
+FB1.UA.CLK18     off  
+FB1.UB.CLK18     off  
+FB1.UC.CLK18     off  
+FB1.UD.CLK18     off  
+FB1.A22.CLK      off  
+FB1.A31.CLK      off  
+FB1.B22.CLK      off  
+FB1.B31.CLK      off  
+FB1.C22.CLK      off  
+FB1.C31.CLK      off  
+FB1.D22.CLK      off  
+FB1.D31.CLK      off  
+FB1.A23.CLK      off  
+FB1.A32.CLK      off  
+FB1.B23.CLK      off  
+FB1.B32.CLK      off  
+FB1.C23.CLK      off  
+FB1.C32.CLK      off  
+FB1.D23.CLK      off  
+FB1.D32.CLK      off  
+FB1.A24.CLK      off  
+FB1.A33.CLK      off  
+FB1.B24.CLK      off  
+FB1.B33.CLK      off  
+FB1.C24.CLK      off  
+FB1.C33.CLK      off  
+FB1.D24.CLK      off  
+FB1.D33.CLK      off  
+FB1.A25.CLK      off  
+FB1.A34.CLK      off  
+FB1.B25.CLK      off  
+FB1.B34.CLK      off  
+FB1.C25.CLK      off  
+FB1.C34.CLK      off  
+FB1.D25.CLK      off  
+FB1.D34.CLK      off  
+FB1.A26.CLK      off  
+FB1.A35.CLK      off  
+FB1.B26.CLK      off  
+FB1.B35.CLK      off  
+FB1.C26.CLK      off  
+FB1.C35.CLK      off  
+FB1.D26.CLK      off  
+FB1.D35.CLK      off  
+FB1.A27.CLK      off  
+FB1.A36.CLK      off  
+FB1.B27.CLK      off  
+FB1.B36.CLK      off  
+FB1.C27.CLK      off  
+FB1.C36.CLK      off  
+FB1.D27.CLK      off  
+FB1.D36.CLK      off  
+======================
+
+
+Function Settings
+*****************
+Name     Value
+--------------
+==============
+
+
+Clock Generator Settings
+************************
+Generator Name     Input Source     Input Frequency
+---------------------------------------------------
+===================================================
+
+
+Clock Source Settings
+*********************
+PLL Name             Output Frequency     Alias
+-----------------------------------------------
+FB1.uA.CLK_SRC1      0                         
+FB1.uA.CLK_SRC2      0                         
+FB1.uA.CLK_SRC3      0                         
+FB1.uA.CLK_SRC4      0                         
+FB1.uA.CLK_SRC5      0                         
+FB1.uA.CLK_SRC6      0                         
+FB1.uA.CLK_SRC7      0                         
+FB1.uA.CLK_SRC8      0                         
+FB1.uA.CLK_SRC9      0                         
+FB1.uA.CLK_SRC10     0                         
+FB1.uA.CLK_SRC11     0                         
+FB1.uA.CLK_SRC12     0                         
+FB1.uA.CLK_SRC13     0                         
+FB1.uA.CLK_SRC14     0                         
+FB1.uA.CLK_SRC15     0                         
+FB1.uA.CLK_SRC16     0                         
+FB1.uA.CLK_SRC17     0                         
+FB1.uA.CLK_SRC18     0                         
+FB1.uB.CLK_SRC1      0                         
+FB1.uB.CLK_SRC2      0                         
+FB1.uB.CLK_SRC3      0                         
+FB1.uB.CLK_SRC4      0                         
+FB1.uB.CLK_SRC5      0                         
+FB1.uB.CLK_SRC6      0                         
+FB1.uB.CLK_SRC7      0                         
+FB1.uB.CLK_SRC8      0                         
+FB1.uB.CLK_SRC9      0                         
+FB1.uB.CLK_SRC10     0                         
+FB1.uB.CLK_SRC11     0                         
+FB1.uB.CLK_SRC12     0                         
+FB1.uB.CLK_SRC13     0                         
+FB1.uB.CLK_SRC14     0                         
+FB1.uB.CLK_SRC15     0                         
+FB1.uB.CLK_SRC16     0                         
+FB1.uB.CLK_SRC17     0                         
+FB1.uB.CLK_SRC18     0                         
+FB1.uC.CLK_SRC1      0                         
+FB1.uC.CLK_SRC2      0                         
+FB1.uC.CLK_SRC3      0                         
+FB1.uC.CLK_SRC4      0                         
+FB1.uC.CLK_SRC5      0                         
+FB1.uC.CLK_SRC6      0                         
+FB1.uC.CLK_SRC7      0                         
+FB1.uC.CLK_SRC8      0                         
+FB1.uC.CLK_SRC9      0                         
+FB1.uC.CLK_SRC10     0                         
+FB1.uC.CLK_SRC11     0                         
+FB1.uC.CLK_SRC12     0                         
+FB1.uC.CLK_SRC13     0                         
+FB1.uC.CLK_SRC14     0                         
+FB1.uC.CLK_SRC15     0                         
+FB1.uC.CLK_SRC16     0                         
+FB1.uC.CLK_SRC17     0                         
+FB1.uC.CLK_SRC18     0                         
+FB1.uD.CLK_SRC1      0                         
+FB1.uD.CLK_SRC2      0                         
+FB1.uD.CLK_SRC3      0                         
+FB1.uD.CLK_SRC4      0                         
+FB1.uD.CLK_SRC5      0                         
+FB1.uD.CLK_SRC6      0                         
+FB1.uD.CLK_SRC7      0                         
+FB1.uD.CLK_SRC8      0                         
+FB1.uD.CLK_SRC9      0                         
+FB1.uD.CLK_SRC10     0                         
+FB1.uD.CLK_SRC11     0                         
+FB1.uD.CLK_SRC12     0                         
+FB1.uD.CLK_SRC13     0                         
+FB1.uD.CLK_SRC14     0                         
+FB1.uD.CLK_SRC15     0                         
+FB1.uD.CLK_SRC16     0                         
+FB1.uD.CLK_SRC17     0                         
+FB1.uD.CLK_SRC18     0                         
+FB1.PLL1.CLK1        22000                GCLK1
+FB1.PLL1.CLK2        20000                GCLK2
+FB1.PLL1.CLK3        0                         
+FB1.PLL2.CLK1        0                         
+FB1.PLL2.CLK2        0                         
+FB1.PLL2.CLK3        0                         
+FB1.PLL3.CLK1        0                         
+FB1.PLL3.CLK2        0                         
+FB1.PLL3.CLK3        0                         
+FB1.PLL4.CLK1        0                         
+FB1.PLL4.CLK2        0                         
+FB1.PLL4.CLK3        0                         
+FB1.PLL5.CLK1        0                         
+FB1.PLL5.CLK2        0                         
+FB1.PLL5.CLK3        0                         
+FB1.PLL6.CLK1        0                         
+FB1.PLL6.CLK2        0                         
+FB1.PLL6.CLK3        0                         
+FB1.PLL7.CLK1        0                         
+FB1.PLL7.CLK2        0                         
+FB1.PLL7.CLK3        0                         
+FB1.PLL8.CLK1        0                         
+FB1.PLL8.CLK2        0                         
+FB1.PLL8.CLK3        0                         
+===============================================
+
+
+Clock Connector Settings
+************************
+Clock Name     Alias
+--------------------
+====================
+
+
+Reset Settings
+**************
+Name     Value
+--------------
+==============
+
+
+Voltage Region Settings
+**********************
+Name        Value
+-----------------
+FB1.A1      1.20 
+FB1.A2      1.20 
+FB1.B5      1.80 
+FB1.B6      1.80 
+FB1.B7      1.80 
+FB1.B19     1.20 
+FB1.B20     1.20 
+=================
+
+
+Board Connector Details
+**************************
+Name          Status   
+-----------------------
+FB1.A1        Occupied 
+FB1.A2        Occupied 
+FB1.A3        Available
+FB1.A4        Available
+FB1.A5        Available
+FB1.A6        Available
+FB1.A7        Available
+FB1.A8        Available
+FB1.A9        Available
+FB1.A10       Available
+FB1.A11       Available
+FB1.A12       Available
+FB1.A13       Available
+FB1.A14       Available
+FB1.A15       Available
+FB1.A16       Available
+FB1.A17       Available
+FB1.A18       Available
+FB1.A19       Available
+FB1.A20       Available
+FB1.A21       Available
+FB1.A22       Available
+FB1.A23       Available
+FB1.A24       Available
+FB1.A25       Available
+FB1.A26       Available
+FB1.A27       Available
+FB1.A28       Available
+FB1.A29       Available
+FB1.A30       Available
+FB1.A31       Available
+FB1.A32       Available
+FB1.A33       Available
+FB1.A34       Available
+FB1.A35       Available
+FB1.A36       Available
+FB1.B1        Available
+FB1.B2        Available
+FB1.B3        Available
+FB1.B4        Available
+FB1.B5        Occupied 
+FB1.B6        Occupied 
+FB1.B7        Occupied 
+FB1.B8        Available
+FB1.B9        Available
+FB1.B10       Available
+FB1.B11       Available
+FB1.B12       Available
+FB1.B13       Available
+FB1.B14       Available
+FB1.B15       Available
+FB1.B16       Available
+FB1.B17       Available
+FB1.B18       Available
+FB1.B19       Occupied 
+FB1.B20       Occupied 
+FB1.B21       Available
+FB1.B22       Available
+FB1.B23       Available
+FB1.B24       Available
+FB1.B25       Available
+FB1.B26       Available
+FB1.B27       Available
+FB1.B28       Available
+FB1.B29       Available
+FB1.B30       Available
+FB1.B31       Available
+FB1.B32       Available
+FB1.B33       Available
+FB1.B34       Available
+FB1.B35       Available
+FB1.B36       Available
+FB1.C1        Available
+FB1.C2        Available
+FB1.C3        Available
+FB1.C4        Available
+FB1.C5        Available
+FB1.C6        Available
+FB1.C7        Available
+FB1.C8        Available
+FB1.C9        Available
+FB1.C10       Available
+FB1.C11       Available
+FB1.C12       Available
+FB1.C13       Available
+FB1.C14       Available
+FB1.C15       Available
+FB1.C16       Available
+FB1.C17       Available
+FB1.C18       Available
+FB1.C19       Available
+FB1.C20       Available
+FB1.C21       Available
+FB1.C22       Available
+FB1.C23       Available
+FB1.C24       Available
+FB1.C25       Available
+FB1.C26       Available
+FB1.C27       Available
+FB1.C28       Available
+FB1.C29       Available
+FB1.C30       Available
+FB1.C31       Available
+FB1.C32       Available
+FB1.C33       Available
+FB1.C34       Available
+FB1.C35       Available
+FB1.C36       Available
+FB1.D1        Available
+FB1.D2        Available
+FB1.D3        Available
+FB1.D4        Available
+FB1.D5        Available
+FB1.D6        Available
+FB1.D7        Available
+FB1.D8        Available
+FB1.D9        Available
+FB1.D10       Available
+FB1.D11       Available
+FB1.D12       Available
+FB1.D13       Available
+FB1.D14       Available
+FB1.D15       Available
+FB1.D16       Available
+FB1.D17       Available
+FB1.D18       Available
+FB1.D19       Available
+FB1.D20       Available
+FB1.D21       Available
+FB1.D22       Available
+FB1.D23       Available
+FB1.D24       Available
+FB1.D25       Available
+FB1.D26       Available
+FB1.D27       Available
+FB1.D28       Available
+FB1.D29       Available
+FB1.D30       Available
+FB1.D31       Available
+FB1.D32       Available
+FB1.D33       Available
+FB1.D34       Available
+FB1.D35       Available
+FB1.D36       Available
+FB1.AM221     Available
+FB1.AM222     Available
+FB1.AM231     Available
+FB1.AM232     Available
+FB1.AM236     Available
+FB1.AM237     Available
+FB1.BM221     Available
+FB1.BM222     Available
+FB1.BM231     Available
+FB1.BM232     Available
+FB1.BM236     Available
+FB1.BM237     Available
+FB1.CM221     Available
+FB1.CM222     Available
+FB1.CM231     Available
+FB1.CM232     Available
+FB1.CM236     Available
+FB1.CM237     Available
+FB1.DM221     Available
+FB1.DM222     Available
+FB1.DM231     Available
+FB1.DM232     Available
+FB1.DM236     Available
+FB1.DM237     Available
+=======================

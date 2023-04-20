@@ -1,0 +1,35 @@
+#HAPS System definition
+board_system_create -haps -name haps100
+board_system_create -add HAPS100_4F -name FB1 
+
+board_system_configure -clk_src FB1.PLL -name GCLK1 -frequency 22000
+board_system_configure -clk_src FB1.PLL -name GCLK2 -frequency 20000
+
+board_system_configure -clock FB1.uA.CLK1 GCLK1
+board_system_configure -clock FB1.uB.CLK1 GCLK1
+board_system_configure -clock FB1.uA.CLK2 GCLK2
+board_system_configure -clock FB1.uB.CLK2 GCLK2
+
+#TOP Level IO creation
+board_system_configure -top_io {FB1.B5 FB1.B6 FB1.B7}
+
+#TOP IO VCCO
+board_system_configure -voltage {FB1.B5 FB1.B6 FB1.B7} 1.8
+
+#connection between uA and uB for counter control signals
+board_system_create -interconnect -manual CON_CABLE_50_HT3 -name FB1_A1_B19 -connector {FB1.A1 FB1.B19}
+board_system_create -interconnect -manual CON_CABLE_50_HT3 -name FB1_A2_B20 -connector {FB1.A2 FB1.B20}
+
+#board_system_create -interconnect -manual CON_CABLE_50_HT3 -name FB1_A3_B21 -connector {FB1.A3 FB1.B21}
+#board_system_create -interconnect -manual CON_CABLE_50_HT3 -name FB1_A4_B22 -connector {FB1.A4 FB1.B22}
+
+#HT3 VCCO
+board_system_configure -voltage {FB1.A1} 1.2
+board_system_configure -voltage {FB1.A2} 1.2
+board_system_configure -voltage {FB1.B19} 1.2
+board_system_configure -voltage {FB1.B20} 1.2
+
+#board_system_configure -voltage {FB1.A3} 1.2
+#board_system_configure -voltage {FB1.A4} 1.2
+#board_system_configure -voltage {FB1.B21} 1.2
+#board_system_configure -voltage {FB1.B22} 1.2

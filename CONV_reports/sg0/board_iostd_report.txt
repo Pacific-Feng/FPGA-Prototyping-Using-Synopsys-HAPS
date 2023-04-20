@@ -1,0 +1,141 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|sg0
+
+
+
+Board report for design top
+=========================================================
+System contains 2 FPGAs:
+ * FB1.uB (XCVU19P-FSVA3824)
+ * FB1.uA (XCVU19P-FSVA3824)
+
+
+
+Voltage Region Report:
+-------------------------------------------------
+(details of any conflicts should be shown above)
+  region FB1.B1 : USER SET at 1.20 V
+  region FB1.B2 : USER SET at 1.20 V
+  region FB1.B3 : USER SET at 1.20 V
+  region FB1.B4 : USER SET at 1.20 V
+  region FB1.B5 : USER SET at 1.80 V
+  region FB1.B6 : USER SET at 1.80 V
+  region FB1.B7 : USER SET at 1.80 V
+  region FB1.B8 : USER SET at 1.20 V
+  region FB1.B9 : USER SET at 1.20 V
+  region FB1.B10 : USER SET at 1.20 V
+  region FB1.B11 : USER SET at 1.20 V
+  region FB1.B12 : USER SET at 1.20 V
+  region FB1.B13 : USER SET at 1.20 V
+  region FB1.B14 : USER SET at 1.20 V
+  region FB1.B15 : USER SET at 1.20 V
+  region FB1.B16 : USER SET at 1.20 V
+  region FB1.B17 : USER SET at 1.20 V
+  region FB1.B18 : USER SET at 1.20 V
+  region FB1.B19 : USER SET at 1.20 V
+  region FB1.B20 : USER SET at 1.20 V
+  region FB1.B21 : USER SET at 1.20 V
+  region FB1.B22 : USER SET at 1.20 V
+  region FB1.B23 : USER SET at 1.20 V
+  region FB1.B24 : USER SET at 1.20 V
+  region FB1.B25 : USER SET at 1.20 V
+  region FB1.B26 : USER SET at 1.20 V
+  region FB1.B27 : USER SET at 1.20 V
+  region FB1.B28 : USER SET at 1.20 V
+  region FB1.B29 : USER SET at 1.20 V
+  region FB1.B30 : USER SET at 1.20 V
+  region FB1.B31 : USER SET at 1.20 V
+  region FB1.B32 : USER SET at 1.20 V
+  region FB1.B33 : USER SET at 1.20 V
+  region FB1.B34 : USER SET at 1.20 V
+  region FB1.B35 : USER SET at 1.20 V
+  region FB1.B36 : USER SET at 1.20 V
+  region FB1.1.2v : FIXED at 1.20 V
+  region FB1.1.8v : FIXED at 1.80 V
+  region FB1.A1 : USER SET at 1.20 V
+  region FB1.A2 : USER SET at 1.20 V
+  region FB1.A3 : USER SET at 1.20 V
+  region FB1.A4 : USER SET at 1.20 V
+  region FB1.A5 : USER SET at 1.20 V
+  region FB1.A6 : USER SET at 1.20 V
+  region FB1.A7 : USER SET at 1.20 V
+  region FB1.A8 : USER SET at 1.20 V
+  region FB1.A9 : USER SET at 1.20 V
+  region FB1.A10 : USER SET at 1.20 V
+  region FB1.A11 : USER SET at 1.20 V
+  region FB1.A12 : USER SET at 1.20 V
+  region FB1.A13 : USER SET at 1.20 V
+  region FB1.A14 : USER SET at 1.20 V
+  region FB1.A15 : USER SET at 1.20 V
+  region FB1.A16 : USER SET at 1.20 V
+  region FB1.A17 : USER SET at 1.20 V
+  region FB1.A18 : USER SET at 1.20 V
+  region FB1.A19 : USER SET at 1.20 V
+  region FB1.A20 : USER SET at 1.20 V
+  region FB1.A21 : USER SET at 1.20 V
+  region FB1.A22 : USER SET at 1.20 V
+  region FB1.A23 : USER SET at 1.20 V
+  region FB1.A24 : USER SET at 1.20 V
+  region FB1.A25 : USER SET at 1.20 V
+  region FB1.A26 : USER SET at 1.20 V
+  region FB1.A27 : USER SET at 1.20 V
+  region FB1.A28 : USER SET at 1.20 V
+  region FB1.A29 : USER SET at 1.20 V
+  region FB1.A30 : USER SET at 1.20 V
+  region FB1.A31 : USER SET at 1.20 V
+  region FB1.A32 : USER SET at 1.20 V
+  region FB1.A33 : USER SET at 1.20 V
+  region FB1.A34 : USER SET at 1.20 V
+  region FB1.A35 : USER SET at 1.20 V
+  region FB1.A36 : USER SET at 1.20 V
+
+Make sure to set up the voltage regions as described above
+
+-------------------------------------------------
+End Voltage Region Report
+
+
+IO Standards Report:
+==================================================
+FB1.uB:
+  FB1.uB : bank 19: OK , notes: N1 N5 
+  FB1.uB : bank 20: OK , notes: N1 N5 
+  FB1.uB : bank 63: OK , notes: N1 N5 
+  FB1.uB : bank 69: OK , notes: N2 N4 N5 
+  FB1.uB : bank 70: OK , notes: N1 N5 
+  94 of 99 banks of FB1.uB were entirely unused
+
+FB1.uA:
+  FB1.uA : bank 69: OK , notes: N2 N4 N5 
+  FB1.uA : bank 70: OK , notes: N4 N5 
+  97 of 99 banks of FB1.uA were entirely unused
+
+Key to notes and warnings:
+N1: IO standards assigned technology default
+N2: IO standards assigned by user
+N3: IO standards assigned internally (for example, based on TDM)
+N4: IO standards assigned based IO standards required or set on connected pins
+N5: IO standards assigned based voltage regions
+N6: The IO bank uses multiple different IO standards
+--------------------------------------------------
+
+Detailed report for traces with conflicting pins:
+None found
+==================================================
+End IO Standards Report
+

@@ -1,0 +1,45 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|pp0
+Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+@N: AP152 |(Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s)
+Timing graph for view Layer2
+   Nodes 74 (Constrained: 0), Edges 72, Dissolve Edges 557
+   Build Time 0.0130445
+Timing graph for view MCC
+   Nodes 188 (Constrained: 0), Edges 447, Dissolve Edges 820
+   Build Time 0.0113094
+Timing graph for view Multiplier20
+   Nodes 80 (Constrained: 0), Edges 1006, Dissolve Edges 1296
+   Build Time 0.00471006
+Timing graph for view CONV_TMR
+   Nodes 83 (Constrained: 0), Edges 95, Dissolve Edges 3008
+   Build Time 0.00674176
+Timing graph for view Layer0
+   Nodes 72 (Constrained: 0), Edges 68, Dissolve Edges 1500
+   Build Time 0.00615168
+Timing graph for view Layer1
+   Nodes 74 (Constrained: 0), Edges 75, Dissolve Edges 1088
+   Build Time 0.00504222
+Timing graph for view top
+   Nodes 108 (Constrained: 0), Edges 105, Dissolve Edges 105
+   Build Time 0.00103242
+@N: MF848 |Writing compressed timing models.
+@N: AP152 |(Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s)
+Complete

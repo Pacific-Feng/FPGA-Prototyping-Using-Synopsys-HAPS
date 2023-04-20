@@ -1,0 +1,1 @@
+run system_generate -fdc design.fdc -path synthesis_files -out sg0

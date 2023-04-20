@@ -1,0 +1,1 @@
+run partition -pcf partition.pcf -out pa0

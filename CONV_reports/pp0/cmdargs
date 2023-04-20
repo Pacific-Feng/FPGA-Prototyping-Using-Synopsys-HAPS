@@ -1,0 +1,1 @@
+run pre_partition -tss board.tss -fdc design.fdc -area_est 1 -out pp0

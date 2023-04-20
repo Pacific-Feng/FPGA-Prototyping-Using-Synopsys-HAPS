@@ -1,0 +1,1 @@
+report rtl_diagnostics -srclist vlog_inputs.txt -top_module top -out rd0

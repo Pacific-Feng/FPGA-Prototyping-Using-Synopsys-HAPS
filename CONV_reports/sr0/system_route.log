@@ -1,0 +1,410 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|sr0
+Synopsys ProtoCompiler Partitioner/Router, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+
+THE FORMAT OF THIS LOG MAY CHANGE WITHOUT NOTICE
+
+@N: AP405 |Writing System Route Report to system_route.rpt
+
+@N: AP378 |Using Router Flow
+
+@S1 AP379 |Routing Environment Preparation
+@N: AP161 |Loading Connection Models
+@N: AP285 |Adding Connection Model 'ACPM' -- Simple asynchronous TDM using mux/demux logic with a counter, similar to legacy CPM
+@N: AP285 |Adding Connection Model 'HSTDM' -- Asynchronous High Speed TDM using IOSERDES with source synchronous clocks and training
+@N: AP285 |Adding Connection Model 'HSTDM_ERD' -- High Speed TDM with runtime error detection (ERD)
+@N: AP285 |Adding Connection Model 'MGTDM' -- MGT TDM 
+@N: AP285 |Adding Connection Model 'MGTDM_Y' -- MGT TDM 
+@N: AP163 |Loading Target System Specification
+Building target system...
+@N| Assigning syn_chip_id 0 to FPGA FB1.uA.
+@N| Assigning syn_chip_id 1 to FPGA FB1.uB.
+@N| Assigning syn_chip_id 2 to FPGA FB1.uC.
+@N| Assigning syn_chip_id 3 to FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N: AP250 |TargetSystem Summary
+Name: 'DETAIL' Bins: 15
+
+FPGA_Bin Pins LUT     LUTM    DFF     BRAM URAM DSP  ZDPIMOD IO    
+------------------------------------------------------------------
+FB1.uA    205 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uB    361 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uC    105 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uD    105 4085760 2042880 8171520 2160 320  3840 992     2072  
+==================================================================
+
+Port_Bin          Pins Capacity 
+-------------------------------
+TOP_IO_HT3_FB1_B5 52   52       
+TOP_IO_HT3_FB1_B6 52   52       
+TOP_IO_HT3_FB1_B7 52   52       
+===============================
+
+External_Bin Pins        
+------------------------
+FB1.PLL1     2    LOCKED 
+FB1.PLL2     0    LOCKED 
+FB1.PLL3     0    LOCKED 
+FB1.PLL4     0    LOCKED 
+FB1.PLL5     0    LOCKED 
+FB1.PLL6     0    LOCKED 
+FB1.PLL7     0    LOCKED 
+FB1.PLL8     0    LOCKED 
+========================
+
+Connectivity               Point-to-Point Mult-Terminal 
+-------------------------------------------------------
+FB1.uA<->FB1.uB (FIXED)    81             0             
+FB1.uA<->FB1.uB            98             0             
+FB1.uC<->FB1.uD (FIXED)    81             0             
+FB1.uB<->TOP_IO_HT3_FB1_B5 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B6 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B7 52             0             
+=======================================================
+
+Function_Name Trace_Count 
+-------------------------
+GCLK          2           
+MGT           16          
+MGT_DEBUG     32          
+=========================
+
+@S2 AP157 |Design & Constraint Load and Preparation
+
+@S2.1 AP123 |Loading Design
+@N: AP147 |Reading netlist: /home/course/csr530604/final_project/CONV/system_route/sr0/top.srp
+@N: AP152 |(Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 654MB peak: 654MB)
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+
+Start loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 654MB peak: 654MB)
+
+
+Finished loading timing files (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 658MB peak: 658MB)
+
+@N: AP119 |Uniquifying Design
+@N: AP120 |Building Partitioner Data Structures
+
+@S2.2 AP149 |Reading PCF Constraints
+@N: AP219 |Reading file: /home/course/csr530604/final_project/CONV/system_route/sr0/top.pcf
+@N: AP500 |Using TDM type 'HSTDMSE'
+@N: AP219 |Reading file: /home/course/csr530604/final_project/CONV/system_route/sr0/top_cu.pcf
+@N: AP219 |Reading file: /home/course/csr530604/final_project/CONV/system_route/sr0/top_na.pcf
+@N: AP219 |Reading file: /home/course/csr530604/final_project/partition.pcf
+@N: AP500 |Using TDM type 'HSTDMSE'
+@N: AP221 |Duplicate assign_global_net command for net 'clk' specified in /home/course/csr530604/final_project/partition.pcf:14. Omitting.
+@W: AP935 |reset_synchronize -toplevel_net is deprecated, please use -net.
+	from source: /home/course/csr530604/final_project/partition.pcf at line: 19
+
+@N: AP238 |Target System Summary After Constraints: 
+Name: 'DETAIL' Bins: 15
+
+FPGA_Bin Pins LUT     LUTM    DFF     BRAM URAM DSP  ZDPIMOD IO    
+------------------------------------------------------------------
+FB1.uA    205 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uB    361 4085760 2042880 8171520 2160 320  3840 992     2072  
+FB1.uC    105 LOCKED                                               
+FB1.uD    105 LOCKED                                               
+==================================================================
+
+Port_Bin          Pins Capacity 
+-------------------------------
+TOP_IO_HT3_FB1_B5 52   52       
+TOP_IO_HT3_FB1_B6 52   52       
+TOP_IO_HT3_FB1_B7 52   52       
+===============================
+
+External_Bin Pins        
+------------------------
+FB1.PLL1     2    LOCKED 
+FB1.PLL2     0    LOCKED 
+FB1.PLL3     0    LOCKED 
+FB1.PLL4     0    LOCKED 
+FB1.PLL5     0    LOCKED 
+FB1.PLL6     0    LOCKED 
+FB1.PLL7     0    LOCKED 
+FB1.PLL8     0    LOCKED 
+========================
+
+Connectivity               Point-to-Point Mult-Terminal 
+-------------------------------------------------------
+FB1.uA<->FB1.uB (FIXED)    81             0             
+FB1.uA<->FB1.uB            98             0             
+FB1.uC<->FB1.uD (FIXED)    81             0             
+FB1.uB<->TOP_IO_HT3_FB1_B5 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B6 52             0             
+FB1.uB<->TOP_IO_HT3_FB1_B7 52             0             
+=======================================================
+
+Function_Name Trace_Count 
+-------------------------
+GCLK          2           
+MGT           16          
+MGT_DEBUG     32          
+=========================
+
+GCLK   Source    Assigned  Connected      
+Trace  Bin       Net       FPGAs          
+----------------------------------------
+GCLK1  FB1.PLL1  clk       FB1.uA FB1.uB  
+========================================
+
+@S2.3 AP130 |Building Primary Partitioning Graph
+
+@S2.4 AP420 |Constraint Summary
+
+To see a list of all unconstrained ports and/or cells, use option '-report_unconstrained ports|cells|all'
+
+Port Constraints:
+=================
+Ports  Bin_Assignment    
+------------------------
+ 40/52 TOP_IO_HT3_FB1_B6 
+  1    FB1.PLL1*         
+ 23/52 TOP_IO_HT3_FB1_B7 
+ 40/52 TOP_IO_HT3_FB1_B5 
+  0    UNASSIGNED        
+========================
+Total ports assigned: 104
+*Locked or external bin(s)
+
+Cell Constraints (includes constraints implied by port assignments):
+====================================================================
+Bin_Assignment Cells 
+--------------------
+FB1.uA             1 
+FB1.uB             1 
+UNASSIGNED         0 
+====================
+Total cells assigned: 2
+
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 862MB peak: 862MB)
+@N: AP158 |Simplifying target system for routing
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 862MB peak: 862MB)
+Reading estimate timing file: /home/course/csr530604/final_project/CONV/system_route/sr0/top_timest.est
+
+@S3 AP680 |System-Route Optimization Options
+
+Parameter                  Value             
+-----------------------------------------
+Priority                   multi_hop_path    
+Feedthrough Routing        direct            
+TDM Type                   HSTDM             
+TDM Qualification          all               
+HSTDM Bitrate              1400 Mbps         
+HSTDM Bitrate per Cable    on                
+HSTDM Reset                NONE              
+Max Ratio                  16                
+=========================================
+
+
+@S4 AP241 |Global Routing
+@N: AP634 |Using HSTDM type: Single-Ended 
+
+@S4.1 AP603 |Non-Timing-Driven Global Route
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 862MB peak: 862MB)
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 862MB peak: 862MB)
+
+@S4.2 AP267 |Pre-Optimization Global Route Report
+
+@S4.2.1 AP271 |Global Route Net Path Summary
+
+TDM Qualification type: all
+
+Nets  TDM                           Traces                                             
+All   Qualified      Non-Qualified  All     TDM_usable  Connected_Bins                 
+-------------------------------------------------------------------------------------
+  40              0             40      52           0  FB1.uB TOP_IO_HT3_FB1_B5       
+  40              0             40      52           0  FB1.uB TOP_IO_HT3_FB1_B6       
+  23              0             23      52           0  FB1.uB TOP_IO_HT3_FB1_B7       
+   1              0              1     179         116  FB1.uA FB1.uB                  
+   1              0              1       2           0  FB1.uA FB1.uB FB1.PLL1 (GCLK)  
+=====================================================================================
+
+@S4.2.2 AP366 |Global Route Ratio Report
+
+Connection      Trace_Usage Net_Usage              Ratios   Bitrate Cablelength 
+                                  TDM DIRECT CLOCK          in Mbps in cm       
+-------------------------------------------------------------------------------
+FB1.uA<->FB1.uB       1/179         0      1     0                  50          
+FB1.uC<->FB1.uD        0/81         0      0     0 Not used                     
+===============================================================================
+
+@S4.2.3 AP267 |Global Route Summary
+@N: AP367 |Routed 105 Nets
+@N: AP268 |Maximum TDM Ratio: 1
+@N: AP684 |Cut Clocks: 0
+@N: AP368 |Feedthroughs: 0
+@N: AP270 |Unrouted: 0
+
+@S4.2.4 AP267 |Global Route Direct Nets
+
+To see a list of all nets that must be routed without TDM, use option '-report_direct_nets 1'
+
+@N: AP371 |For global routing details, refer to system_route.rpt
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 862MB peak: 862MB)
+
+@S4.3 AP248 |Feedthrough Insertion and Net Splitting
+@N: AP415 |See system_route.rpt for details.
+Set 'n_syn_useioff' property for NInstance 'FB1.uA.aptn_reset_sync_reset_4'
+Set 'n_syn_useioff' property for NInstance 'FB1.uB.aptn_reset_sync_reset_2'
+
+@S4.4 AP289 |Find Clocks and TDM Restrictions
+@N: AP240 |Using TDM qualification mode: all
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 862MB peak: 862MB)
+@N: AP152 |(Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 862MB peak: 862MB)
+
+@S4.5 AP604 |Generating Timing Graph
+@N: Z409 |Inter-die delay in reporting excluded.
+
+@S4.6 AP605 |Route Optimization
+
+@S4.6.1 AP611 |Multi-hop Optimization with Estimated Timing
+No TG updates for net: clk sink Bin: FB1.uA
+No TG updates for net: clk sink Bin: FB1.uB
+@N: AP152 |(Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 931MB peak: 931MB)
+
+@S4.7 AP612 |Cable Assignment Optimization
+DUT pins connected to SLR
+FPGA Name  SLR[0]  SLR[1]  SLR[2]  SLR[3]  Total  
+------------------------------------------------
+   FB1.uA       0       0       2       0      2  
+   FB1.uB     103       0       2       0    105  
+================================================
+
+@N: AP152 |(Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 931MB peak: 931MB)
+
+@S5 AP606 |Final Global Route Results
+@N: AP152 |(Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 931MB peak: 931MB)
+
+@S5.1 AP267 |Post-Optimization and Cable Assignment Global Route Report
+
+@S5.1.1 AP366 |Global Route Ratio Report
+
+Connection      Trace_Usage Net_Usage              Ratios   Bitrate Cablelength 
+                                  TDM DIRECT CLOCK          in Mbps in cm       
+-------------------------------------------------------------------------------
+FB1.uA<->FB1.uB       1/179         0      1     0                  50          
+FB1.uC<->FB1.uD        0/81         0      0     0 Not used                     
+===============================================================================
+
+@S5.1.2 AP265 |Global Route Trace Usage
+
+Trace  Function  Trace_Usage  Clock_Usage  Net_Usage  Module  Trace_Name/Connection                    Bitrate  Cablelength  
+---------------------------------------------------------------------------------------------------------------------------
+   1)  GCLK              1/2                       1          Trace Group: T_FB1.PLL1_FB1.uA_FB1.uB_1                        
+                           1            1          0  DIRECT  FB1.PLL1.CLK1-> {FB1.uA.CLK FB1.uB.CLK}                        
+                                                                                                                             
+   2)                  40/52                      40          Trace Group: TOP_IO_HT3_FB1_B6                                 
+                          40            0         40  DIRECT  FB1.uB.J6-> {TOP_IO_HT3_FB1_B6.A}                              
+                                                                                                                             
+   3)                  40/52                      40          Trace Group: TOP_IO_HT3_FB1_B5                                 
+                          19            0         19  DIRECT  FB1.uB.J5-> {TOP_IO_HT3_FB1_B5.A}                              
+                          21            0         21  DIRECT  TOP_IO_HT3_FB1_B5.A-> {FB1.uB.J5}                              
+                                                                                                                             
+   4)                  23/52                      23          Trace Group: TOP_IO_HT3_FB1_B7                                 
+                           3            0          3  DIRECT  FB1.uB.J7-> {TOP_IO_HT3_FB1_B7.A}                              
+                          20            0         20  DIRECT  TOP_IO_HT3_FB1_B7.A-> {FB1.uB.J7}                              
+                                                                                                                             
+   5)                    1/7                       1          Trace Group: T_FB1.uA_FB1.uB_2                                 
+                           1            0          1  DIRECT  FB1.uA.FIXED-> {FB1.uB.FIXED}                                  
+                                                                                                                             
+===========================================================================================================================
+
+@S5.1.3 AP426 |Multi-Hop Report
+
+Hops Number          Number        
+     Inter-FPGA Nets Toplevel Nets 
+----------------------------------
+1    1               103           
+==================================
+
+@S5.1.4 AP655 |Post-Optimization Routing Summary
+Connection       Trace Usage  No. of Net     TDM Module   Available Slack Range  Mean Slack  Untimed  
+                              failed timing               (Post TDM)                         nets     
+----------------------------------------------------------------------------------------------------
+FB1.uA<->FB1.uB  1/179                                                                                
+                              0/1            NONE (7 ns)  36 to 36 ns            36 ns       0        
+====================================================================================================
+
+@S5.1.5 AP267 |Global Route Summary
+@N: AP367 |Routed 105 Nets
+@N: AP268 |Maximum TDM Ratio: 1
+@N: AP684 |Cut Clocks: 0
+@N: AP371 |For global routing details, refer to system_route.rpt
+@N: AP152 |(Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 931MB peak: 931MB)
+Multi-hop Combinational Path Analysis
+@N: AP405 |Writing Multi-hop Path Report to timing_route.rpt
+No TG updates for net: clk sink Bin: FB1.uA
+No TG updates for net: clk sink Bin: FB1.uB
+
+@S6 AP249 |Detail Routing
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 0 on FPGA FB1.uA.
+@N| Using syn_chip_id 1 on FPGA FB1.uB.
+@N| Using syn_chip_id 2 on FPGA FB1.uC.
+@N| Using syn_chip_id 3 on FPGA FB1.uD.
+@N: AP152 |(Real Time elapsed 0h:00m:09s; CPU Time elapsed 0h:00m:08s; Memory used current: 931MB peak: 931MB)
+@N: MF764 |Finished adding TDM modules to the design netlist. 
+@N: AP924 |DUT hierarchy added to FPGA`s
+@N: AP405 |Writing Report of all nets qualified for TDM to tdm_qualified.rpt
+@N: AP405 |Writing Report of all nets disqualified for TDM to tdm_nonqualified.rpt
+@N: AP405 |Writing System-route Trace Assignment Results to router_constraints.pcf
+
+@S7 AP581 |Key parameters from this run
+
+@N: BN341 |OPTIONS: The options used for this run
+   Feedthrough Routing - Connection model used for feed-through
+   HSTDM Bitrate - 
+   HSTDM Bitrate per Cable - 
+   HSTDM Reset - 
+   Max Ratio - 
+   Priority - Optimization priority
+   TDM Qualification - 
+   TDM Type - Connection model used for TDM
+
+KEY_PARAMETER,CONSTRAINTS,ports_assigned,104,ports_unassigned,0,cells_assigned,2,cells_unassigned,0
+KEY_PARAMETER,OPTIONS,Priority,multi_hop_path,Feedthrough Routing,direct,TDM Type,HSTDM,TDM Qualification,all,HSTDM Bitrate,1400 Mbps,HSTDM Bitrate per Cable,on,HSTDM Reset,NONE,Max Ratio,16
+KEY_PARAMETER,ROUTER,routed_nets,105,max_ratio,1,cut_clocks,0,feedthroughs,0,unrouted_nets,0,trace_usage,22.5322,num_1_hops,104,max_hops,1,timing_violations,0,timing_tns,0,timing_tps,36,mean_slack,36,min_slack,36,max_slack,36
+KEY_PARAMETER,RUNTIME,tassign,0.00255566,traceopt,0.346638,detail,0.00493563,fpt,0.000144938,fpc,9,ipt,8.8915e-05,ipc,17,total,9.44663,cpu,9.28159
+
+THE FORMAT OF THIS LOG MAY CHANGE WITHOUT NOTICE
+
+@N: AP225 |Autopartitioner exiting with status 0
+Process took 0h:00m:09s realtime, 0h:00m:09s cputime
+# Thu Apr 20 12:41:01 2023
+
+###########################################################]

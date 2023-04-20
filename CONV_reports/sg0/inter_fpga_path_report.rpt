@@ -1,0 +1,43 @@
+
+Copyright (C) 1994-2021 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: HAPS (R) ProtoCompiler 100
+Build: R-2020.12-SP1-1
+Install: /usr/cadtool/csr5306/synopsys/protocomp/R-2020.12-SP1-1
+OS: CentOS release 6.10 (Final)
+Hostname: ws25
+max virtual memory: unlimited (bytes)
+max user processes: 1024
+max stack size: 10485760 (bytes)
+
+
+Database state : /home/course/csr530604/final_project/CONV/|sg0
+Synopsys Xilinx Technology Mapper, Version map202012pcp4, Build 193R, Built Apr  8 2022 21:27:09, @4216327
+
+
+Id  Slack (ns)  Source Clock  Sink Clock  Exception  Hops  TDMs used per hop**  Total TDM delay (ns)*  User logic delay (ns)  Path delay (ns)  Requirement (ns)  Start Point                                   End Point                                     Net Name  
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1   41.108      clk:r         clk:r       -          -     x1                   (trace:3.753) = 3.753  0.000                  3.890            44.998            FB1.uA.dut_inst.aptn_reset_sync_reset_4.Q[0]  FB1.uB.dut_inst.aptn_reset_sync_reset_2.D[0]  reset     
+=====================================================================================================================================================================================================================================================================
+
+Path: #1
+Starting point:                     FB1.uA/dut_inst.aptn_reset_sync_reset_4/Q[0]
+Ending point:                       FB1.uB/dut_inst.aptn_reset_sync_reset_2/D[0]
+The start point is clocked by       clk [rising]
+The end point is clocked by         clk [rising]
+Arrival time                        3.890
+Required time                       44.998
+Slack:                              41.108
+
+Instance / Net name                         Pin name     Type     FPGA       Arrival time
+-----------------------------------------------------------------------------------------
+FB1.uA/dut_inst.aptn_reset_sync_reset_4     Q[0]         dff      FB1_uA            0.137
+FB1.uA/dut_inst.aptn_reset_sync_reset_4     Q[0]         dff      FB1_uA            0.137
+reset                                       -            Net      -          -           
+FB1.uB/dut_inst.aptn_reset_sync_reset_2     D[0]         dff      FB1_uB            3.890
+FB1.uB/dut_inst.aptn_reset_sync_reset_2     D[0]         dff      FB1_uB            3.890
+=========================================================================================
+

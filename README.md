@@ -1,8 +1,7 @@
-# FPGA-Prototyping-Using-Synopsys-HAPS
-The final project of FPGA Prototyping Using Synopsys HAPS 2023
-
 ###### tags: `HAPS`
 # FPGA-Prototyping-Using-Synopsys-HAPS Final Project Report
+
+The final project of FPGA Prototyping Using Synopsys HAPS 2023
 
 Github Link: [連結](https://github.com/Pacific-Feng/FPGA-Prototyping-Using-Synopsys-HAPS)
 

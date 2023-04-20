@@ -73,10 +73,6 @@ CONV 電路輸入為一灰階圖像，電路需完成3層(Layer)的運算流程�
 
 ![](https://i.imgur.com/skEhTgp.png)
 
-##### &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;(ii) MCC
-
-![](https://i.imgur.com/6jaOVVG.png)
-
 
 <br>
 
@@ -86,10 +82,15 @@ CONV 電路輸入為一灰階圖像，電路需完成3層(Layer)的運算流程�
 
 <br>
 
-#### &ensp;&ensp;&ensp;**(b) Layer 2**
+#### &ensp;&ensp;&ensp;**(c) Layer 2**
 
 ![](https://i.imgur.com/dyHZEtM.png)
 
+<br>
+
+#### &ensp;&ensp;&ensp;**(d) MCC**
+
+![](https://i.imgur.com/6jaOVVG.png)
 
 <br>
 
